@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --height-header: 100px;
+    --primary-color: rgb(252, 192, 197); 
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.clear{
+    clear:both;
+}
+
+

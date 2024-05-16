@@ -1,0 +1,610 @@
+
+/* Begin: Sidebar Left */
+.socials-list{
+    padding: 4px;  
+    width: fit-content;
+    position: fixed;
+    top: 0;
+    margin-top: 100px;
+
+}
+.socials-list a{
+ 
+    text-decoration: none;
+}
+
+.socials-list img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.socials-list ul{
+    list-style: none;
+}
+
+.socials-list .fb-link,
+.socials-list .ig-link,
+.socials-list .pin-link{
+    scale: 1;
+    transition: 0.2s;
+}
+
+.socials-list .fb-link:hover,
+.socials-list .ig-link:hover,
+.socials-list .pin-link:hover{
+    scale: 1.05;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.socials-list .fb-link .tooltip-fb,
+.socials-list .ig-link .tooltip-ig,
+.socials-list .pin-link .tooltip-pin{
+    font-size: 16px;
+    visibility: hidden;
+    background-color: rgb(247, 245, 245);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.socials-list .fb-link:hover .tooltip-fb,
+.socials-list .ig-link:hover .tooltip-ig,
+.socials-list .pin-link:hover .tooltip-pin {
+    visibility: visible;
+}
+/* End: Sidebar Left */
+
+/* Begin: Sidebar Right */
+
+.sales-icon{
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.2s;
+    margin-top: 100px;
+}
+
+.sales-icon img{
+    width: 130px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; */
+    /* box-shadow: 100%; */
+}
+
+.sales-icon:hover{
+    scale: 1.05;
+    transition: 0.2s; 
+    opacity: 0.8;
+}
+
+/* Begin: Style-Section */
+.text-heading {
+    font-family: "Dancing Script", cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    margin: 140px 0 0 0;
+    text-align: center;
+}
+
+.style-section .image-container{
+    margin: 20px 0 0 0;
+}
+
+.style-section .image-container img{
+    cursor: pointer;
+    width: 100%;
+    /* object-fit: contain; */
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.09);
+    /* scale: 1;
+    transition: 0.2s; */
+}
+
+.style-section .image-container .style-img{
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+.style-section .image-container .style-img-item{
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.style-section .image-container .style-img img{
+    transition: transform ease 0.2s;
+}
+
+.style-section .image-container .style-img:hover img{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.btn-more a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+
+.btn-more{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    opacity: 0.3;
+    background-color: white;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.2s;
+}
+
+.btn-more a:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn-more:hover{
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+/* End: Style Section */
+
+/* Begin: Collection-Section */
+.collection-section{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collection-section .header-collection{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: "Dancing Script", cursive;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.collection-section .text-collection p{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    margin: 8px 0;
+}
+
+.collection-section .image-collection .collection-img{
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+.collection-section .image-collection .collection-img-item{
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.collection-section .image-collection img{
+    width: 100%;
+    border-radius: 10px;
+    /* padding: 0 8px; */
+    /* margin: 20px; */
+    cursor: pointer;
+    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.09);
+    transition: transform ease 0.2s;
+}
+
+.collection-section .image-collection img:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+
+/* End: Collection-Section */
+
+/* Begin: Product-Section */
+.product-section{
+    /* margin-top: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-section h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    background: url(/Fashion/assets/img/linebrush.png) no-repeat center;
+    background-size: 170px;
+}
+
+.product-section .product img{
+    width: 100%;
+    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.09);
+    /* text-align: center; */
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+.product-section .product p{
+    font-size: 1.3rem;
+    padding: 16px 0 4px 0;
+}
+
+.product-section .product span{
+    font-size: 1.4rem;
+    color: #7574d0;
+}
+
+.product-section .product .image-product{
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.product-section .product .image-product-item{
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.product-section .product .image-product img{
+    transition: transform ease 0.2s;
+
+}
+
+.product-section .product .image-product:hover img{
+    transform: scale(1.1);
+    opacity: 0.9;
+
+}
+
+.product-section .image-product .button-add{
+    /* position: absolute; */
+    /* bottom: 0 ; */
+    /* opacity: 0; */
+    width: 100%;
+    margin-left: 0;
+}
+
+.product-section .image-product .button-add:hover{
+    opacity: 1;
+}
+
+.product-section .image-product .button-buy{
+    text-align: left;
+    border-radius: 0 0 0 10px;
+}
+
+.product-section .image-product .button-show{
+    text-align: right;  
+    border-radius: 0 0 10px 0;
+}
+
+.product-section .image-product .button-buy:hover,
+.product-section .image-product .button-show:hover{
+    opacity: 0.8;
+}
+
+.product-section .image-product .button-buy i,
+.product-section .image-product .button-show i{
+    font-size: 1.4rem;
+}
+
+.product-section .image-product .button-buy,
+.product-section .image-product .button-show{
+    /* padding: 0; */
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 8px 4px;
+}
+
+.product-section .image-product .action-buy,
+.product-section .image-product .action-show{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    margin-right: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.product-section .btn-more{
+    margin-top: 0;
+}
+
+/* End: Product-Section */
+
+/* Mobile - Tablet */
+.menu-search-mobile{
+    height: 40px;
+    background-color: rgba(252, 192, 197, 0.3);
+    border: 4px solid white;
+    border-radius: 6px;
+    display: none;
+}
+.input-search-mobile{
+    font-size: 1.6rem;
+    margin: 8px 0 0 20px;
+    width: calc(100% - 70px);
+    background-color: rgba(252, 192, 197, -0.7);
+    border: none;
+    outline: none;
+}
+.search-icon-mobile{
+    float: right;
+    width: fit-content;
+    font-size: 2rem;
+    padding: 3px 10px 0px 0px;
+}
+
+/* Buy Section */
+.buy-section .header-buy{
+}
+
+.buy-section .sidebar-left{
+    padding-top: var(--height-header);
+    padding-right: 100px;
+}
+
+.buy-section .sidebar-right{
+    padding-top: var(--height-header);
+    padding-left: 40px;
+}
+
+
+/* Sidebar Left */
+.buy-section .sidebar-left .logo-buy{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+}
+
+.buy-section .sidebar-left .input-voucher{
+    margin-top: 12px;
+}
+
+.buy-section .sidebar-left .login-buy-section{
+    cursor: pointer;
+    color: #338dbc;
+    font-weight: 500;
+}
+
+.buy-section .sidebar-left .login-buy-section:hover{
+    opacity: 0.7;
+}
+
+.buy-section .sidebar-left ul,
+.buy-section .content-sidebar-left .title,
+.buy-section .content-sidebar-left .sub-header-order{
+    padding-top: 10px;
+}
+
+.buy-section .sidebar-left li {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.buy-section .sidebar-left .arrow-right-buy{
+    font-size: 1rem;
+    padding: 0 6px;
+}
+
+.buy-section .content-sidebar-left .title{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.buy-section .content-sidebar-left .sub-header-order{
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+.buy-section .content-sidebar-left .sub-header-order a{
+    text-decoration: none;
+}
+
+.buy-section .content-sidebar-left .form-order .input-buy-email{
+    padding-left: 0;
+}
+.buy-section .content-sidebar-left .form-order .input-buy-phone{
+    padding-right: 0;
+}
+
+.buy-section .content-sidebar-left .form-order .prov,
+.buy-section .content-sidebar-left .form-order .footer-pay{
+    padding-left: 0;
+}
+
+.buy-section .content-sidebar-left .form-order .wd,
+.buy-section .content-sidebar-left .form-order .btn-buy-product{
+    padding-right: 0;
+}
+
+.buy-section .content-sidebar-left .form-order .footer-buy{
+    padding: 0;
+}
+
+
+
+.buy-section .content-sidebar-left .form-order .province,
+.buy-section .content-sidebar-left .form-order .district,
+.buy-section .content-sidebar-left .form-order .ward{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.buy-section .content-sidebar-left .footer-buy .btn-buy-product,
+.buy-section .content-sidebar-left .footer-cart{
+    margin-top: 12px;
+}
+
+.buy-section .content-sidebar-left .footer-buy .buy-product{
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #338dbc;
+    color: white;
+    cursor: pointer;
+}
+
+.buy-section .content-sidebar-left .footer-cart{
+    color: #338dbc;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.buy-section .content-sidebar-left .cart-buy-section{
+    cursor: pointer;
+}
+
+.buy-section .content-sidebar-left .cart-buy-section:hover,
+.buy-section .content-sidebar-left .footer-buy .buy-product:hover{
+    opacity: 0.7;
+}
+
+.buy-section .content-sidebar-left .form-buy,
+.buy-section .content-sidebar-left .footer-pay{
+    margin: 0;
+}
+
+/* Sidebar Right */
+.buy-section .sidebar-right{
+    box-shadow: 1px 0 0 #e1e1e1 inset;
+}
+
+.sidebar-right .product-image .product-thumnail{
+    position: relative;
+    width: 7rem;
+}
+
+.sidebar-right .product-image .product-thumnail-quantity{
+    position: absolute;
+    right: -0.75em;
+    top: -0.75em;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 50%;
+    background-color: rgba(153, 153, 153, 0.9);
+    color: #fff;
+}
+
+.sidebar-right .product-image{
+    padding-bottom: 10px;
+}
+
+
+.sidebar-right .product-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.sidebar-right .product-description{
+    padding: 0 0 0 14px;
+    width: 100%;
+}
+
+.sidebar-right .product-description .main-description,
+.sidebar-right .product-price,
+.sidebar-right .sub-total-product .sub-total-price{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.sidebar-right .product-description .sub-description{
+    font-size: 1.3rem;
+    opacity: 0.6;
+}
+
+.sidebar-right .sub-total-product .sub-total-name{
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.sidebar-right .sub-total-product .sub-total-price{
+    text-align: right;
+}
+
+.sidebar-right .sub-total-product td{
+    padding-top: 10px;
+}
+
+.sidebar-right .voucher{
+    width: 100%;
+    margin-left: 0;
+    text-align: right;
+}
+
+.sidebar-right .use-voucher{
+    background-color: black;
+    color: white;
+    opacity: 0.3;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.sidebar-right .use-voucher:hover{
+    opacity: 0.4;
+}
+
+
+.sidebar-right .input-voucher,
+.sidebar-left .input-voucher{
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.buy-section .header-buy .line{
+    margin: 10px 0;
+}
+
+.sidebar-right .total-product .total-name{
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.sidebar-right .total-product .currency{
+    font-size: 1.6rem;
+    font-weight: 500;
+    opacity: 0.5;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+
+.sidebar-right .total-product .total-price{
+    font-size: 2.4rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+

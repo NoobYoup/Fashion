@@ -1,0 +1,89 @@
+.footer{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more{
+    font-size: 1.8rem;
+    opacity: 0.5;
+}
+
+.more a{
+    text-decoration: none;
+    color: black;
+}
+
+.more .btn-more{
+    opacity: 1;
+    border-radius: 10px;
+    width: fit-content;
+    margin-top: 0;
+    background-color: white;
+}
+
+.more .btn-more a {
+    font-size: 1rem;
+}
+
+.more .btn-more a:hover{
+    background-color: black;
+    color: white;
+}
+
+.more li{
+    padding: 0 0 40px;
+    list-style: none;
+    scale: 1;
+    transition: 0.2s;
+    width: fit-content;
+}
+
+.more li:hover{
+    scale: 1.05;
+    transition: 0.2s;
+}
+
+.more li:last-child{
+    padding: 0;
+}
+
+
+.container-contact{
+    font-size: 1.8rem;
+}
+
+.container-contact h3,
+.container-contact li{
+    padding-bottom: 20px;
+}
+
+.container-contact li{
+    list-style: none;
+}
+
+.container-contact a{
+    color: #182cef;
+    opacity: 1;
+    padding: 13px 0;
+    text-decoration: none;
+}
+
+.container-contact a:hover{
+    opacity: 0.6;
+}
+
+.container-contact .socials-footer a{
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+}
+
+.container-contact h3{
+    letter-spacing: 3px;
+}
+
+.container-contact img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nie's</title>
+    <link rel="stylesheet" href="/Fashion/assets/font/themify-icons-font/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="/font/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/Fashion/assets/img/sale_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/Fashion/assets/css/reset.css" />
+    <link rel="stylesheet" href="/Fashion/assets/css/grid.css" />
+    <link rel="stylesheet" href="/Fashion/assets/css/header.css" />
+    <link rel="stylesheet" href="/Fashion/assets/css/content.css" />
+    <link rel="stylesheet" href="/Fashion/assets/css/footer.css" />
+    <link rel="stylesheet" href="/Fashion/assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="grid wide buy-section">
+            <div class="row header-buy">
+                <div class="col l-7">
+                    <div class="sidebar-left">
+                        <div class="header-sidebar-left">
+                            <div>
+                                <a href="/Fashion/html/index.html" class="logo-buy">Nie's</a>
+                            </div>
+
+                            <div class="list-order">
+                                <ul>
+                                    <li>
+                                        Giỏ hàng
+                                        <i class="ti-angle-right arrow-right-buy"></i>
+                                    </li>
+
+                                    <li>
+                                        Thông tin giao hàng
+                                        <i class="ti-angle-right arrow-right-buy"></i>
+                                    </li>
+                                    <li>
+                                        Phương thức thanh toán
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Modal Login -->
+
+                        <input type="checkbox" hidden class="input-login" id="modal-input-login" />
+                        <input type="checkbox" hidden class="input-cart" id="modal-input-cart" />
+
+                        <label for="modal-input-login" class="overlay-login"></label>
+                        <label for="modal-input-cart" class="overlay-cart"></label>
+
+                        <div class="modal-login">
+                            <label for="modal-input-login" class="modal-close-login">
+                                <i class="ti-close"></i>
+                            </label>
+
+                            <div class="modal-header">
+                                <i class="modal-header-icon ti-user"></i>
+                                Đăng nhập tài khoản
+                            </div>
+
+                            <div class="modal-body">
+                                <form action="">
+                                    <!-- <label for="" class="modal-label">
+                                    <i class="ti-shopping-cart"></i>
+                                    Tickets, $15 per person
+                                  </label> -->
+
+                                    <input type="email" class="modal-input" placeholder="Email.." required />
+
+                                    <!-- <label for="" class="modal-label">
+                                    <i class="ti-user"></i>
+                                    Send To
+                                  </label> -->
+
+                                    <input type="text" class="modal-input" placeholder="Mật khẩu.." required />
+
+                                    <button class="buy-tickets">
+                                        ĐĂNG NHẬP
+                                        <i class="ti-check"></i>
+                                    </button>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <p class="modal-help">
+                                    Khách hàng mới? <a href="" class="create-acc">Tạo tài khoản</a>
+                                </p>
+                                <p class="modal-help">
+                                    Quên mật khẩu? <a href="" class="restore-pwd">Khôi phục mật khẩu</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal-cart">
+                            <label for="modal-input-cart" class="modal-close-cart">
+                                <i class="ti-close"></i>
+                            </label>
+
+                            <div class="modal-header">
+                                <i class="modal-header-icon ti-shopping-cart"></i>
+                                Giỏ hàng
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="modal-content">
+                                    <table class="cart-view">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="face-sad">
+                                                        <i class="ti-face-sad"></i>
+                                                    </div>
+                                                    <span class="text-no-cart">Hiện chưa có sản phẩm</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="line"></div>
+
+                            <div class="modal-footer">
+                                <table class="total">
+                                    <tr>
+                                        <td class="text-left">
+                                            TỔNG TIỀN:
+                                        </td>
+                                        <td class="text-right">
+                                            0<sup>₫</sup>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <button class="buy-cart">
+                                        THANH TOÁN
+                                        <i class="ti-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="sidebar-right sidebar-right-tablet">
+                            <table class="list-product-buy">
+                                <tbody>
+                                    <tr>
+                                        <td class="product-image">
+                                            <div class="product-thumnail">
+                                                <img src="/Fashion/assets/img/11.png" alt="">
+                                                <span class="product-thumnail-quantity">1</span>
+                                            </div>
+                                        </td>
+                                        <td class="product-description">
+                                            <p class="main-description">ÁO KIỂU GARBIEL</p>
+                                            <p class="sub-description">TRẮNG / FREESIZE</p>
+                                        </td>
+                                        <td class="product-price">
+                                            290,000<sup>₫</sup>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-image">
+                                            <div class="product-thumnail">
+                                                <img src="/Fashion/assets/img/12.png" alt="">
+                                                <span class="product-thumnail-quantity">1</span>
+                                            </div>
+                                        </td>
+                                        <td class="product-description">
+                                            <p class="main-description">ÁO KIỂU AUBREY</p>
+                                            <p class="sub-description">TRẮNG HOA</p>
+                                        </td>
+                                        <td class="product-price">
+                                            190,000<sup>₫</sup>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-image">
+                                            <div class="product-thumnail">
+                                                <img src="/Fashion/assets/img/13.png" alt="">
+                                                <span class="product-thumnail-quantity">1</span>
+                                            </div>
+                                        </td>
+                                        <td class="product-description">
+                                            <p class="main-description">ÁO KIỂU HILAR</p>
+                                            <p class="sub-description">TRẮNG / FREESIZE</p>
+                                        </td>
+                                        <td class="product-price">
+                                            210,000<sup>₫</sup>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+                            <div class="line"></div>
+    
+                            <div class="form-voucher">
+                                <form action="">
+                                    <div class="row voucher">
+    
+                                        <input type="text" class="input-voucher col l-8" placeholder="Mã giảm giá" />
+                                        <div class="col l-4">
+                                            <button class="use-voucher">Sử dụng</button>
+                                        </div>
+                                </form>
+    
+                            </div>
+    
+                            <div class="line"></div>
+    
+                            <table class="sub-total-product">
+                                <tbody>
+                                    <tr class="total-line">
+                                        <td class="sub-total-name">Tạm tính</td>
+                                        <td class="sub-total-price">690,000<sup>₫</sup></td>
+                                    </tr>
+                                    <tr class="total-line">
+                                        <td class="sub-total-name">Phí vận chuyển</td>
+                                        <td class="sub-total-price">0<sup>₫</sup></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+                            <div class="line"></div>
+    
+                            <table class="total-product">
+                                <tfoot>
+                                    <tr>
+                                        <td class="total-name">Tổng cộng</td>
+                                        <td>
+                                            <span class="currency"><sub>VND</sub></span>
+                                        </td>
+                                        <td>
+                                            <span class="total-price">690,000<sup>₫</sup></span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div> -->
+
+                        <div class="content-sidebar-left">
+                            <div class="order-section">
+                                <div class="header-order">
+                                    <h2 class="title">Thông tin giao hàng</h2>
+                                </div>
+
+                                <div class="content-order">
+                                    <div class="sub-header-order">
+                                        Bạn đã có tài khoản?
+                                        <label for="modal-input-login" class="login-buy-section">
+                                            Đăng nhập
+                                        </label>
+                                    </div>
+
+                                    <div class="form-order">
+                                        <form action="" class="row form-buy">
+                                            <input type="text" class="input-voucher" placeholder="Họ và tên" required />
+                                            <div class="col l-7 m-7 c-12 input-buy-email">
+                                                <input type="email" class="input-voucher" placeholder="Email (nếu có)"
+                                                    required />
+                                            </div>
+                                            <div class="col l-5 m-5 c-12 input-buy-phone">
+                                                <input type="tel" class="input-voucher" placeholder="Số điện thoại"
+                                                    required />
+                                            </div>
+                                            <input type="text" class="input-voucher" placeholder="Địa chỉ" required />
+
+
+
+
+                                            <div class="select prov col l-4 m-4 c-4">
+                                                <!-- <label for="tinhthanh">Chọn tỉnh/thành:</label> -->
+                                                <select class="province">
+                                                    <option value="">Chọn tỉnh / thành</option>
+                                                    <option value="ha-noi">Hà Nội</option>
+                                                    <option value="tphcm">TP. Hồ Chí Minh</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="select dist col l-4 m-4 c-4">
+                                                <!-- <label for="quanhuyen">Chọn quận/huyện:</label> -->
+                                                <select class="district">
+                                                    <option value="">Chọn quận / huyện</option>
+                                                    <option value="">Quận 6</option>
+                                                    <option value="">Quận Bình Tân</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="select wd col l-4 m-4 c-4">
+                                                <!-- <label for="phuongxa">Chọn phường/xã:</label> -->
+                                                <select class="ward">
+                                                    <option value="">Chọn phường / xã</option>
+                                                    <option value="">Phường 9</option>
+                                                    <option value="">Phường 8</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="footer-buy col l-12 m-12 c-12">
+                                                <div class="row footer-pay">
+                                                    <div class="footer-cart col l-6 m-6 c-12">
+                                                        <label for="modal-input-cart" class="cart-buy-section">Giỏ
+                                                            hàng</label>
+                                                    </div>
+
+                                                    <div class="btn-buy-product col l-6 m-6 c-12">
+
+                                                        <button class="buy-product">
+                                                            Tiếp tục đến với phương thức thanh toán
+                                                        </button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col l-5">
+                    <div class="sidebar-right">
+                        <table class="list-product-buy">
+                            <tbody>
+                                <tr>
+                                    <td class="product-image">
+                                        <div class="product-thumnail">
+                                            <img src="/Fashion/assets/img/11.png" alt="">
+                                            <span class="product-thumnail-quantity">1</span>
+                                        </div>
+                                    </td>
+                                    <td class="product-description">
+                                        <p class="main-description">ÁO KIỂU GARBIEL</p>
+                                        <p class="sub-description">TRẮNG / FREESIZE</p>
+                                    </td>
+                                    <td class="product-price">
+                                        290,000<sup>₫</sup>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-image">
+                                        <div class="product-thumnail">
+                                            <img src="/Fashion/assets/img/12.png" alt="">
+                                            <span class="product-thumnail-quantity">1</span>
+                                        </div>
+                                    </td>
+                                    <td class="product-description">
+                                        <p class="main-description">ÁO KIỂU AUBREY</p>
+                                        <p class="sub-description">TRẮNG HOA</p>
+                                    </td>
+                                    <td class="product-price">
+                                        190,000<sup>₫</sup>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-image">
+                                        <div class="product-thumnail">
+                                            <img src="/Fashion/assets/img/13.png" alt="">
+                                            <span class="product-thumnail-quantity">1</span>
+                                        </div>
+                                    </td>
+                                    <td class="product-description">
+                                        <p class="main-description">ÁO KIỂU HILAR</p>
+                                        <p class="sub-description">TRẮNG / FREESIZE</p>
+                                    </td>
+                                    <td class="product-price">
+                                        210,000<sup>₫</sup>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="line"></div>
+
+                        <div class="form-voucher">
+                            <form action="">
+                                <div class="row voucher">
+
+                                    <input type="text" class="input-voucher col l-8" placeholder="Mã giảm giá" />
+                                    <div class="col l-4">
+                                        <button class="use-voucher">Sử dụng</button>
+                                    </div>
+                            </form>
+
+                        </div>
+
+                        <div class="line"></div>
+
+                        <table class="sub-total-product">
+                            <tbody>
+                                <tr class="total-line">
+                                    <td class="sub-total-name">Tạm tính</td>
+                                    <td class="sub-total-price">690,000<sup>₫</sup></td>
+                                </tr>
+                                <tr class="total-line">
+                                    <td class="sub-total-name">Phí vận chuyển</td>
+                                    <td class="sub-total-price">0<sup>₫</sup></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="line"></div>
+
+                        <table class="total-product">
+                            <tfoot>
+                                <tr>
+                                    <td class="total-name">Tổng cộng</td>
+                                    <td>
+                                        <span class="currency"><sub>VND</sub></span>
+                                    </td>
+                                    <td>
+                                        <span class="total-price">690,000<sup>₫</sup></span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+    <script>
+        const tinhthanhSelect = document.getElementById('tinhthanh');
+        const quanhuyenSelect = document.getElementById('quanhuyen');
+        const phuongxaSelect = document.getElementById('phuongxa');
+
+        tinhthanhSelect.addEventListener('change', function () {
+            const tinhthanhId = this.value;
+
+            // Load options for quận/huyện based on tỉnh/thành
+            quanhuyenSelect.innerHTML = '<option value="">Chọn quận/huyện</option>';
+            for (let i = 0; i < data.quanhuyen[tinhthanhId].length; i++) {
+                const quanhuyen = data.quanhuyen[tinhthanhId][i];
+                const option = document.createElement('option');
+                option.value = quanhuyen.id;
+                option.textContent = quanhuyen.name;
+                quanhuyenSelect.appendChild(option);
+            }
+        });
+
+        quanhuyenSelect.addEventListener('change', function () {
+            const quanhuyenId = this.value;
+
+            // Load options for phường/xã based on quận/huyện
+            phuongxaSelect.innerHTML = '<option value="">Chọn phường/xã</option>';
+            for (let i = 0; i < data.phuongxa[quanhuyenId].length; i++) {
+                const phuongxa = data.phuongxa[quanhuyenId][i];
+                const option = document.createElement('option');
+                option.value = phuongxa.id;
+                option.textContent = phuongxa.name;
+                phuongxaSelect.appendChild(option);
+            }
+        });
+    </script>
+</body>
+
+</html>
