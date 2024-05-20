@@ -161,6 +161,7 @@
 .collection-section{
     margin-left: auto;
     margin-right: auto;
+    padding: 80px 0;
 }
 
 .collection-section .header-collection{
@@ -222,6 +223,14 @@
     font-weight: lighter;
     text-align: center;
     background: url(/Fashion/assets/img/linebrush.png) no-repeat center;
+    background-size: 170px;
+}
+
+.product-section .header-product{
+    text-align: left;
+    text-indent: 18px;
+    line-height: 50px;
+    background: url(/Fashion/assets/img/linebrush.png) no-repeat;
     background-size: 170px;
 }
 
@@ -316,13 +325,56 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    padding: 0 4px;
+    padding: 9px 28px;
 }
 
 .product-section .btn-more{
     margin-top: 0;
 }
 
+.product-section .soft{
+    text-align: right;
+}
+
+.product-section .soft-by{
+    font-size: 1.6rem;
+    color: #DD478D;;
+    padding: 0 20px 0 0;
+    margin-top: 4px;
+    border-color: transparent;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    outline: 0;
+    cursor: pointer;
+    /* -webkit-appearance: none; */
+    text-indent: 1px;
+}
+
+.product-section .soft-by::after{
+    content: "\e64b";
+    font-family: 'themify';
+    font-size: 14px;
+    color: #000;
+    /* display: block;
+    position: absolute;
+    right: 0;
+     top: 40px;
+    right: 30px; */
+}
+
+.logo-product{
+    font-family: "Dancing Script", cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 5rem;
+}
+
+.main-logo-product{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    padding: 16px 0 0 30px;
+}
 /* End: Product-Section */
 
 /* Mobile - Tablet */
@@ -353,12 +405,12 @@
 }
 
 .buy-section .sidebar-left{
-    padding-top: var(--height-header);
+    padding-top: 20px;
     padding-right: 100px;
 }
 
 .buy-section .sidebar-right{
-    padding-top: var(--height-header);
+    padding-top: 20px;
     padding-left: 40px;
 }
 
@@ -607,4 +659,40 @@
     opacity: 0.8;
 }
 
+.main-logo-buy{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
 
+.product-section-page .header-product{
+    visibility: hidden;
+}
+
+
+/* Detail Product Page */
+.product-detail-container{
+
+}
+
+.product-detail-container .list-image-detail{
+
+}
+
+.product-detail-container .list-image-detail li{
+    list-style: none;
+}
+
+.product-detail-container .image-detail-item{
+    
+}
+
+.product-detail-container .image-detail-item img{
+    width: 100%;
+}
+
+.product-detail-container .product-image-detail img{
+    width: 100%;
+}

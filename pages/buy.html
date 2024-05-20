@@ -5,36 +5,251 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nie's</title>
-    <link rel="stylesheet" href="/Fashion/assets/font/themify-icons-font/themify-icons/themify-icons.css" />
-    <link rel="stylesheet" href="/font/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="../assets/font/themify-icons-font/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="/Fashion/assets/img/sale_icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/Fashion/assets/css/reset.css" />
-    <link rel="stylesheet" href="/Fashion/assets/css/grid.css" />
-    <link rel="stylesheet" href="/Fashion/assets/css/header.css" />
-    <link rel="stylesheet" href="/Fashion/assets/css/content.css" />
-    <link rel="stylesheet" href="/Fashion/assets/css/footer.css" />
-    <link rel="stylesheet" href="/Fashion/assets/css/responsive.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="../assets/img/sale_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/content.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 
 <body>
     <div class="main">
+        <div class="header">
+            <label for="modal-input-menu" class="menu-mobile">
+                <i class="ti-menu"></i>
+            </label>
+            <label for="modal-input-cart" class="cart-mobile">
+                <i class="ti-shopping-cart"></i>
+            </label>
+            <label for="modal-input-login" class="user-mobile">
+                <i class="ti-user"></i>
+            </label>
+
+
+            <div class="main-logo-buy">
+                <a href="../pages/index.html" class="logo-product">Nie's</a>
+            </div>
+            <!-- Menu Search -->
+            <!-- <div class="menu-search">
+              <input type="text" class="input-search" placeholder="Tìm kiếm sản phẩm..." />
+              <div class="search-icon">
+                <i class="search-icon ti-search"></i>
+              </div>
+            </div> -->
+
+            <!-- Menu Circle -->
+            <!-- <div class="menu-circle">
+              <label for="modal-input-login" class="user-icon">
+                <i class="ti-user"></i>
+                <span class="tooltip-user">Tài khoản</span>
+              </label>
+              <label for="modal-input-cart" class="cart-icon">
+                <i class="ti-shopping-cart"></i>
+                <span class="tooltip-cart">Giỏ hàng</span>
+              </label>
+              <div class="cmt-icon">
+                <a href="#">
+                  <i class="ti-comments"></i>
+                </a>
+                <span class="tooltip-cmt">Tin nhắn</span>
+              </div>
+              <div class="bag-icon">
+                <a href="#">
+                  <i class="ti-bag"></i>
+                </a>
+                <span class="tooltip-bag">Lịch sử mua hàng</span>
+              </div>
+              <div class="ticket-icon">
+                <a href="#">
+                  <i class="ti-ticket"></i>
+                </a>
+                <span class="tooltip-ticket">Voucher</span>
+              </div>
+              <div class="bell-icon">
+                <a href="#">
+                  <i class="ti-bell"></i>
+                </a>
+                <span class="tooltip-bell">Thông báo</span>
+              </div>
+            </div> -->
+        </div>
+
+        <input type="checkbox" hidden class="input-login" id="modal-input-login" />
+        <input type="checkbox" hidden class="input-menu" id="modal-input-menu" />
+        <input type="checkbox" hidden class="input-cart" id="modal-input-cart" />
+
+        <label for="modal-input-login" class="overlay-login"></label>
+        <label for="modal-input-menu" class="overlay-menu"></label>
+        <label for="modal-input-cart" class="overlay-cart"></label>
+
+        <!-- Modal Login -->
+        <div class="modal-login">
+            <label for="modal-input-login" class="modal-close-login">
+                <i class="ti-close"></i>
+            </label>
+
+            <div class="modal-header">
+                <i class="modal-header-icon ti-user"></i>
+                Đăng nhập tài khoản
+            </div>
+
+            <div class="modal-body">
+                <form action="">
+                    <!-- <label for="" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                  </label> -->
+
+                    <input type="email" class="modal-input" placeholder="Email.." required />
+
+                    <!-- <label for="" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                  </label> -->
+
+                    <input type="password" class="modal-input" placeholder="Mật khẩu.." required />
+
+                    <button class="buy-tickets">
+                        ĐĂNG NHẬP
+                        <i class="ti-check"></i>
+                    </button>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <p class="modal-help">
+                    Khách hàng mới? <a href="" class="create-acc">Tạo tài khoản</a>
+                </p>
+                <p class="modal-help">
+                    Quên mật khẩu? <a href="" class="restore-pwd">Khôi phục mật khẩu</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Modal Cart -->
+        <div class="modal-cart">
+            <label for="modal-input-cart" class="modal-close-cart">
+                <i class="ti-close"></i>
+            </label>
+
+            <div class="modal-header">
+                <i class="modal-header-icon ti-shopping-cart"></i>
+                Giỏ hàng
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-content">
+                    <table class="cart-view">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="face-sad">
+                                        <i class="ti-face-sad"></i>
+                                    </div>
+                                    <span class="text-no-cart">Hiện chưa có sản phẩm</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="modal-footer">
+                <table class="total">
+                    <tr>
+                        <td class="text-left">
+                            TỔNG TIỀN:
+                        </td>
+                        <td class="text-right">
+                            0<sup>₫</sup>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <button class="buy-cart">
+                        THANH TOÁN
+                        <i class="ti-check"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Menu -->
+        <div class="modal-menu">
+            <label for="modal-input-menu" class="modal-close-menu">
+                <i class="ti-close"></i>
+            </label>
+            <ul class="nav_mobile-list">
+                <li>
+                    <a href="" class="nav_mobile-link">
+                        ÁO
+                        <i class="ti-angle-right arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav_mobile-link">
+                        ÁO KHOÁC
+                        <i class="ti-angle-right arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav_mobile-link">
+                        QUẦN
+                        <i class="ti-angle-right arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav_mobile-link">
+                        ĐẦM
+                        <i class="ti-angle-right arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav_mobile-link">
+                        VÁY
+                        <i class="ti-angle-right arrow-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav_mobile-link">
+                        VOUCHER
+                    </a>
+
+                </li>
+                <li>
+                    <a href="" class="nav_mobile-link">
+                        LỊCH SỬ MUA HÀNG
+                    </a>
+                </li>
+                <li class="element-translate">
+                    <a href="#more" class="nav_mobile-link">
+                        CHÍNH SÁCH
+                    </a>
+                </li>
+                <li class="element-translate">
+                    <a href="#contact" class="nav_mobile-link">
+                        LIÊN HỆ
+                    </a>
+                </li>
+            </ul>
+        </div>
+
         <div class="grid wide buy-section">
             <div class="row header-buy">
-                <div class="col l-7">
+                <div class="col l-7 m-12 c-12">
                     <div class="sidebar-left">
                         <div class="header-sidebar-left">
-                            <div>
-                                <a href="/Fashion/html/index.html" class="logo-buy">Nie's</a>
-                            </div>
-
                             <div class="list-order">
                                 <ul>
                                     <li>
@@ -50,106 +265,6 @@
                                         Phương thức thanh toán
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-
-                        <!-- Modal Login -->
-
-                        <input type="checkbox" hidden class="input-login" id="modal-input-login" />
-                        <input type="checkbox" hidden class="input-cart" id="modal-input-cart" />
-
-                        <label for="modal-input-login" class="overlay-login"></label>
-                        <label for="modal-input-cart" class="overlay-cart"></label>
-
-                        <div class="modal-login">
-                            <label for="modal-input-login" class="modal-close-login">
-                                <i class="ti-close"></i>
-                            </label>
-
-                            <div class="modal-header">
-                                <i class="modal-header-icon ti-user"></i>
-                                Đăng nhập tài khoản
-                            </div>
-
-                            <div class="modal-body">
-                                <form action="">
-                                    <!-- <label for="" class="modal-label">
-                                    <i class="ti-shopping-cart"></i>
-                                    Tickets, $15 per person
-                                  </label> -->
-
-                                    <input type="email" class="modal-input" placeholder="Email.." required />
-
-                                    <!-- <label for="" class="modal-label">
-                                    <i class="ti-user"></i>
-                                    Send To
-                                  </label> -->
-
-                                    <input type="text" class="modal-input" placeholder="Mật khẩu.." required />
-
-                                    <button class="buy-tickets">
-                                        ĐĂNG NHẬP
-                                        <i class="ti-check"></i>
-                                    </button>
-                                </form>
-
-                            </div>
-                            <div class="modal-footer">
-                                <p class="modal-help">
-                                    Khách hàng mới? <a href="" class="create-acc">Tạo tài khoản</a>
-                                </p>
-                                <p class="modal-help">
-                                    Quên mật khẩu? <a href="" class="restore-pwd">Khôi phục mật khẩu</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="modal-cart">
-                            <label for="modal-input-cart" class="modal-close-cart">
-                                <i class="ti-close"></i>
-                            </label>
-
-                            <div class="modal-header">
-                                <i class="modal-header-icon ti-shopping-cart"></i>
-                                Giỏ hàng
-                            </div>
-
-                            <div class="modal-body">
-                                <div class="modal-content">
-                                    <table class="cart-view">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="face-sad">
-                                                        <i class="ti-face-sad"></i>
-                                                    </div>
-                                                    <span class="text-no-cart">Hiện chưa có sản phẩm</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="line"></div>
-
-                            <div class="modal-footer">
-                                <table class="total">
-                                    <tr>
-                                        <td class="text-left">
-                                            TỔNG TIỀN:
-                                        </td>
-                                        <td class="text-right">
-                                            0<sup>₫</sup>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div>
-                                    <button class="buy-cart">
-                                        THANH TOÁN
-                                        <i class="ti-check"></i>
-                                    </button>
-                                </div>
                             </div>
                         </div>
 
@@ -333,7 +448,7 @@
 
                 </div>
 
-                <div class="col l-5">
+                <div class="col l-5 m-12 c-12">
                     <div class="sidebar-right">
                         <table class="list-product-buy">
                             <tbody>
@@ -391,8 +506,9 @@
                             <form action="">
                                 <div class="row voucher">
 
-                                    <input type="text" class="input-voucher col l-8" placeholder="Mã giảm giá" />
-                                    <div class="col l-4">
+                                    <input type="text" class="input-voucher col l-8 m-8 c-8"
+                                        placeholder="Mã giảm giá" />
+                                    <div class="col l-4 m-4 c-4">
                                         <button class="use-voucher">Sử dụng</button>
                                     </div>
                             </form>
@@ -435,44 +551,9 @@
                 </div>
             </div>
         </div>
-
-
     </div>
     </div>
-
-    <script>
-        const tinhthanhSelect = document.getElementById('tinhthanh');
-        const quanhuyenSelect = document.getElementById('quanhuyen');
-        const phuongxaSelect = document.getElementById('phuongxa');
-
-        tinhthanhSelect.addEventListener('change', function () {
-            const tinhthanhId = this.value;
-
-            // Load options for quận/huyện based on tỉnh/thành
-            quanhuyenSelect.innerHTML = '<option value="">Chọn quận/huyện</option>';
-            for (let i = 0; i < data.quanhuyen[tinhthanhId].length; i++) {
-                const quanhuyen = data.quanhuyen[tinhthanhId][i];
-                const option = document.createElement('option');
-                option.value = quanhuyen.id;
-                option.textContent = quanhuyen.name;
-                quanhuyenSelect.appendChild(option);
-            }
-        });
-
-        quanhuyenSelect.addEventListener('change', function () {
-            const quanhuyenId = this.value;
-
-            // Load options for phường/xã based on quận/huyện
-            phuongxaSelect.innerHTML = '<option value="">Chọn phường/xã</option>';
-            for (let i = 0; i < data.phuongxa[quanhuyenId].length; i++) {
-                const phuongxa = data.phuongxa[quanhuyenId][i];
-                const option = document.createElement('option');
-                option.value = phuongxa.id;
-                option.textContent = phuongxa.name;
-                phuongxaSelect.appendChild(option);
-            }
-        });
-    </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

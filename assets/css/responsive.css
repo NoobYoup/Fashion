@@ -46,8 +46,28 @@
     }
     .contact{
         margin-top: 20px;
-
     }
+    .header-buy{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .buy-section .sidebar-right{
+        box-shadow: none;
+        padding-left: 0;
+    }
+    .buy-section .sidebar-left{
+        padding: 0;
+    }
+    .main-logo-product{
+        padding: 0;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    .product-section-page .soft-by{
+        padding: 10px;
+    }
+    
 }
 
 /* Tablet */
@@ -74,6 +94,22 @@
     .product-section .image-product .action-show{
         font-size: 1.2rem;
     }
+    .container-contact .contact .footer-accept{
+        padding-top: 90px;
+    }
+    .product-section .image-product .action-buy,
+    .product-section .image-product .action-show{
+    padding: 9px 22px;
+    }
+    /* .modal-login{
+        transform: translateY(-300%);
+    } */
+    /* .input-login:checked ~ .modal-login{
+        transform: translateY(-155%);
+    }
+    .input-cart:checked ~ .modal-cart{
+        transform: translateY(-166%);
+    } */
 }
 
 /* Mobile */
@@ -108,6 +144,27 @@
     .product-section .image-product .action-show{
         font-size: 1.1rem;
     }   
+    .container-contact .contact .footer-accept{
+        padding-top: 0;
+    }
+    .product-section .image-product .action-buy,
+    .product-section .image-product .action-show{
+        padding: 9px 20px;
+    }
+    .buy-section .content-sidebar-left .footer-cart{
+        flex-direction: column-reverse;
+    }
+    .header-buy{
+        margin: 0;
+    }
+    .btn-buy-product,
+    .input-buy-email,
+    .input-buy-phone{
+        padding: 0;
+    }
+    .footer .more{
+        font-size: 1.6rem;
+    }
 }
 
 /* PC */
@@ -149,5 +206,12 @@
     }
     .product-section{
         margin-right: 14px; 
+    }
+    .container-contact .contact .footer-accept{
+        padding-top: 34px;
+    }
+    .product-section .image-product .action-buy,
+    .product-section .image-product .action-show{
+    padding: 9px 14px;
     }
 }

@@ -82,6 +82,10 @@
     letter-spacing: 3px;
 }
 
+.container-contact .contact .footer-accept{
+    padding-top: 74px;
+}
+
 .container-contact img{
     width: 100%;
     border-radius: 20px;
