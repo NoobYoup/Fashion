@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nie's</title>
+  <link rel="stylesheet" href="../assets/font/themify-icons-font/themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="../assets/font/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="icon" href="../assets/img/sale_icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../assets/css/reset.css" />
+  <link rel="stylesheet" href="../assets/css/grid.css" />
+  <link rel="stylesheet" href="../assets/css/header.css" />
+  <link rel="stylesheet" href="../assets/css/content.css" />
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <label for="modal-input-menu" class="menu-mobile">
+        <i class="ti-menu"></i>
+      </label>
+      <label for="modal-input-cart" class="cart-mobile">
+        <i class="ti-shopping-cart"></i>
+      </label>
+      <label for="modal-input-login" class="user-mobile">
+        <i class="ti-user"></i>
+      </label>
+
+
+      <div class="main-logo-product">
+        <a href="./index.html" class="logo-product">Nie's</a>
+      </div>
+      <!-- Menu Search -->
+      <div class="menu-search">
+        <input type="text" class="input-search" placeholder="Tìm kiếm sản phẩm..." />
+        <div class="search-icon">
+          <i class="search-icon ti-search"></i>
+        </div>
+      </div>
+
+      <!-- Menu Circle -->
+      <!-- <div class="menu-circle">
+              <label for="modal-input-login" class="user-icon">
+                <i class="ti-user"></i>
+                <span class="tooltip-user">Tài khoản</span>
+              </label>
+              <label for="modal-input-cart" class="cart-icon">
+                <i class="ti-shopping-cart"></i>
+                <span class="tooltip-cart">Giỏ hàng</span>
+              </label>
+              <div class="cmt-icon">
+                <a href="#">
+                  <i class="ti-comments"></i>
+                </a>
+                <span class="tooltip-cmt">Tin nhắn</span>
+              </div>
+              <div class="bag-icon">
+                <a href="#">
+                  <i class="ti-bag"></i>
+                </a>
+                <span class="tooltip-bag">Lịch sử mua hàng</span>
+              </div>
+              <div class="ticket-icon">
+                <a href="#">
+                  <i class="ti-ticket"></i>
+                </a>
+                <span class="tooltip-ticket">Voucher</span>
+              </div>
+              <div class="bell-icon">
+                <a href="#">
+                  <i class="ti-bell"></i>
+                </a>
+                <span class="tooltip-bell">Thông báo</span>
+              </div>
+            </div> -->
+    </div>
+
+    <input type="checkbox" hidden class="input-login" id="modal-input-login" />
+    <input type="checkbox" hidden class="input-menu" id="modal-input-menu" />
+    <input type="checkbox" hidden class="input-cart" id="modal-input-cart" />
+
+    <label for="modal-input-login" class="overlay-login"></label>
+    <label for="modal-input-menu" class="overlay-menu"></label>
+    <label for="modal-input-cart" class="overlay-cart"></label>
+
+    <!-- Modal Login -->
+    <div class="modal-login">
+      <label for="modal-input-login" class="modal-close-login">
+        <i class="ti-close"></i>
+      </label>
+
+      <div class="modal-header">
+        <i class="modal-header-icon ti-user"></i>
+        Đăng nhập tài khoản
+      </div>
+
+      <div class="modal-body">
+        <form action="">
+          <!-- <label for="" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                  </label> -->
+
+          <input type="email" class="modal-input" placeholder="Email.." required />
+
+          <!-- <label for="" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                  </label> -->
+
+          <input type="password" class="modal-input" placeholder="Mật khẩu.." required />
+
+          <button class="buy-tickets">
+            ĐĂNG NHẬP
+            <i class="ti-check"></i>
+          </button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <p class="modal-help">
+          Khách hàng mới? <a href="" class="create-acc">Tạo tài khoản</a>
+        </p>
+        <p class="modal-help">
+          Quên mật khẩu? <a href="" class="restore-pwd">Khôi phục mật khẩu</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal Cart -->
+    <div class="modal-cart">
+      <label for="modal-input-cart" class="modal-close-cart">
+        <i class="ti-close"></i>
+      </label>
+
+      <div class="modal-header">
+        <i class="modal-header-icon ti-shopping-cart"></i>
+        Giỏ hàng
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-content">
+          <table class="cart-view">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="face-sad">
+                    <i class="ti-face-sad"></i>
+                  </div>
+                  <span class="text-no-cart">Hiện chưa có sản phẩm</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="modal-footer">
+        <table class="total">
+          <tr>
+            <td class="text-left">
+              TỔNG TIỀN:
+            </td>
+            <td class="text-right">
+              0<sup>₫</sup>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <button class="buy-cart">
+            THANH TOÁN
+            <i class="ti-check"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Menu -->
+    <div class="modal-menu">
+      <label for="modal-input-menu" class="modal-close-menu">
+        <i class="ti-close"></i>
+      </label>
+      <ul class="nav_mobile-list">
+        <li>
+          <div class="image-detail-item">
+            <a href="../assets/img/11.png"></a>
+          </div>
+          <a href="" class="nav_mobile-link">
+            ÁO
+            <i class="ti-angle-right arrow-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="nav_mobile-link">
+            ÁO KHOÁC
+            <i class="ti-angle-right arrow-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="nav_mobile-link">
+            QUẦN
+            <i class="ti-angle-right arrow-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="nav_mobile-link">
+            ĐẦM
+            <i class="ti-angle-right arrow-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="nav_mobile-link">
+            VÁY
+            <i class="ti-angle-right arrow-right"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="nav_mobile-link">
+            VOUCHER
+          </a>
+
+        </li>
+        <li>
+          <a href="" class="nav_mobile-link">
+            LỊCH SỬ MUA HÀNG
+          </a>
+        </li>
+        <li class="element-translate">
+          <a href="#more" class="nav_mobile-link">
+            CHÍNH SÁCH
+          </a>
+        </li>
+        <li class="element-translate">
+          <a href="#contact" class="nav_mobile-link">
+            LIÊN HỆ
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid wide product-detail-container">
+      <div class="product-detail">
+        <div class="row product-detail-item">
+          <div class="col l-5 m-12 c-12">
+            <div class="product-content-img">
+              <div class="row">
+                <div class="col l-2 m-2 c-2">
+                  <div class="list-image-detail">
+                    <ul>
+                      <li>
+                        <div class="image-detail-item">
+                          <img src="../assets/img/11.png" alt="">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="image-detail-item">
+                          <img src="../assets/img/11.png" alt="">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="image-detail-item">
+                          <img src="../assets/img/11.png" alt="">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="image-detail-item">
+                          <img src="../assets/img/11.png" alt="">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="image-detail-item">
+                          <img src="../assets/img/11.png" alt="">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="col l-10 m-10 c-10">
+                  <div class="product-image-detail">
+                    <img src="../assets/img/16.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col l-7 m-12 c-12">
+            <div class="info-product">
+              <div class="product-title">
+                <h1>ÁO KIỂU ELAIN</h1>
+              </div>
+  
+              <div class="line"></div>
+  
+              <div class="product-price">
+                <span class="pro-price">300,000₫</span>
+              </div>
+  
+              <div class="line"></div>
+  
+              <div class="select-swap-size">
+                <div class="select-size size-S">
+                  <input type="checkbox" hidden class="" id="" />
+                  <label for="" class="btn-size">S</label>
+                </div>
+  
+                <div class="select-size size-M">
+                  <input type="checkbox" hidden class="" id="" />
+                  <label for="" class="btn-size">M</label>
+                </div>
+              </div>
+  
+              <div class="line"></div>
+  
+              <div class="quantity-product">
+                <input type="button" value="-" class="quantity-btn">
+                <input type="text" value="1" class="quantity-select">
+                <input type="button" value="+" class="quantity-btn">
+              </div>
+  
+              <div class="wrap-addcart">
+                <div class="btn-addcart-product">
+                  <a href="./buy.html">ĐẶT MUA</a>
+  
+                </div>
+              </div>
+  
+              <div class="line"></div>
+  
+              <div class="panel-group">
+                <div class="product-description panel">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <span >MÔ TẢ SẢN PHẨM</span>
+                    </div>
+                    <div class="arrow-right-panel">
+                      <i class="ti-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="line"></div>
+  
+                <div class="return-policy panel">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <span >CHÍNH SÁCH ĐỔI TRẢ</span>
+                    </div>
+                    <div class="arrow-right-panel">
+                      <i class="ti-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="line"></div>
+  
+                <div class="delivery-policy panel">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <span >CHÍNH SÁCH GIAO HÀNG</span>
+                    </div>
+                    <div class="arrow-right-panel">
+                      <i class="ti-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="line"></div>
+  
+                <div class="payment-policy panel">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <span >CHÍNH SÁCH THANH TOÁN</span>
+                    </div>
+                    <div class="arrow-right-panel">
+                      <i class="ti-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-title">
+        <span >Có thể bạn sẽ thích</span>
+      </div>
+
+      <div class="product-related">
+        <div class="row">
+          <div class="product col l-2-4 m-4 c-6">
+            <div class="image-product">
+              <div class="image-product-item">
+                <a href="./detail.html">
+                  <img src="../assets/img/15.png" alt="product" />
+                </a>
+              </div>
+              <div class="row button-add">
+                <div class="button-buy col l-6 m-6 c-6">
+                  <div>
+                    <a href="./buy.html" class="action-buy">
+                      Mua
+                      <i class="ti-bag"></i>
+                    </a>
+
+                  </div>
+                </div>
+
+                <div class="button-show col l-6 m-6 c-6">
+                  <div>
+                      <a href="#" class="action-show">
+                        Thêm
+                        <i class="ti-shopping-cart"></i>
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <p>ÁO KIỂU GARBIEL</p>
+            <span>290,000₫</span>
+          </div>
+          <div class="product col l-2-4 m-4 c-6">
+            <div class="image-product">
+              <div class="image-product-item">
+                <a href="./detail.html">
+                  <img src="../assets/img/16.png" alt="product" />
+                </a>
+              </div>
+              <div class="row button-add">
+                <div class="button-buy col l-6 m-6 c-6">
+                  <a href="./buy.html" class="action-buy">
+                    Mua
+                    <i class="ti-bag"></i>
+                  </a>
+                </div>
+
+                <div class="button-show col l-6 m-6 c-6">
+                  <div>
+                      <a href="#" class="action-show">
+                        Thêm
+                        <i class="ti-shopping-cart"></i>
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <p>ÁO KIỂU AUBREY</p>
+            <span>190,000₫</span>
+          </div>
+          <div class="product col l-2-4 m-4 c-6">
+            <div class="image-product">
+              <div class="image-product-item">
+                <a href="./detail.html">
+                  <img src="../assets/img/11.png" alt="product" />
+                </a>
+              </div>
+              <div class="row button-add">
+                <div class="button-buy col l-6 m-6 c-6">
+                  <a href="./buy.html" class="action-buy">
+                    Mua
+                    <i class="ti-bag"></i>
+                  </a>
+                </div>
+
+                <div class="button-show col l-6 m-6 c-6">
+                  <div>
+                      <a href="#" class="action-show">
+                        Thêm
+                        <i class="ti-shopping-cart"></i>
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <p>ÁO KIỂU HILAR</p>
+            <span>250,000₫</span>
+          </div>
+          <div class="product col l-2-4 m-4 c-6">
+            <div class="image-product">
+              <div class="image-product-item">
+                <a href="./detail.html">
+                  <img src="../assets/img/18.jpg" alt="product" />
+                </a>
+              </div>
+              <div class="row button-add">
+                <div class="button-buy col l-6 m-6 c-6">
+                  <a href="./buy.html" class="action-buy">
+                    Mua
+                    <i class="ti-bag"></i>
+                  </a>
+                </div>
+
+                <div class="button-show col l-6 m-6 c-6">
+                  <div>
+                      <a href="#" class="action-show">
+                        Thêm
+                        <i class="ti-shopping-cart"></i>
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <p>ÁO KIỂU JESSIE</p>
+            <span>220,000₫</span>
+          </div>
+          <div class="product col l-2-4 m-4 c-6">
+            <div class="image-product">
+              <div class="image-product-item">
+                <a href="./detail.html">
+                  <img src="../assets/img/19.jpg" alt="product" />
+                </a>
+              </div>
+              <div class="row button-add">
+                <div class="button-buy col l-6 m-6 c-6">
+                  <a href="./buy.html" class="action-buy">
+                    Mua
+                    <i class="ti-bag"></i>
+                  </a>
+                </div>
+
+                <div class="button-show col l-6 m-6 c-6">
+                  <div>
+                      <a href="#" class="action-show">
+                        Thêm
+                        <i class="ti-shopping-cart"></i>
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <p>ÁO KIỂU DOUBLE BOW</p>
+            <span>200,000₫</span>
+          </div> 
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="grid wide">
+      <div class="row">
+        <!-- Begin: More -->
+        <div id="more" class="more col l-6 m-12 c-12">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH BÁN HÀNG
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH THANH TOÁN
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH ĐẶT HÀNG VÀ GIAO HÀNG
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH HOÀN TRẢ
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH HOÀN TRẢ
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="arrow ti-angle-double-right"></i>
+                HỢP TÁC ĐẠI LÝ
+              </a>
+            </li>
+
+          </ul>
+          <!-- <div class="btn-more">
+      <a href="#">XEM THÊM</a>
+    </div> -->
+        </div>
+        <!-- End: More -->
+
+        <!-- Begin: Contact -->
+        <div id="contact" class="contact col l-6 m-12 c-12">
+          <div class="container-contact">
+            <div class="row">
+              <div class="col l-6 m-6 c-12 contact">
+                <img src="../assets/img/store.jpg" alt="store" />
+                <img src="../assets/img/store (1).jpg" alt="store" />
+              </div>
+
+              <div class="col l-6 m-6 c-12 contact">
+                <h3 class="footer-store">STORE</h3>
+                <ul>
+                  <li>
+                    <i class="ti-location-pin"></i>
+                    593 Bến Phú Lâm P9,Q6
+                  </li>
+                  <li>
+                    <i class="ti-mobile"></i>
+                    <a href="tel:0987375483" class="phone">0987375483</a>
+                  </li>
+                  <li>
+                    <i class="ti-email"></i>
+                    <a href="mailto:tranminhtrung@gmail.com" class="mail">tranminhtrung@gmail.com</a>
+                  </li>
+                </ul>
+                <h3 class="footer-accept">WE ACCPER</h3>
+                <ul>
+                  <li>
+                    <i class="ti-money"></i>
+                    COD
+                  </li>
+                  <li>
+                    <i class="ti-credit-card"></i>
+                    Credit card
+                  </li>
+                </ul>
+
+                <div class="socials-footer">
+
+                  <a href="https://facebook.com/noobyoup" target="_blank">
+                    <i class="ti-facebook"></i>
+                  </a>
+
+                  <a href="https://instagram.com/noobyoupp" target="_blank">
+                    <i class="ti-instagram"></i>
+                  </a>
+
+                  <a href="#">
+                    <i class="ti-pinterest"></i>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End: Contact -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

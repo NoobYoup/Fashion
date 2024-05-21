@@ -165,7 +165,8 @@
 }
 
 .modal-cart .line,
-.buy-section .header-buy .line{
+.buy-section .header-buy .line,
+.product-detail-container .info-product .line{
     float: left;
     width: 100%;
     border-top: 1px solid #e1e3e4;
