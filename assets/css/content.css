@@ -355,7 +355,7 @@
     font-size: 1.6rem;
     color: #DD478D;;
     padding: 0 20px 0 0;
-    margin-top: 4px;
+    margin-top: 2.8rem;
     border-color: transparent;
     border-bottom: 1px solid #000;
     background-color: #fff;
@@ -381,7 +381,7 @@
     font-family: "Dancing Script", cursive;
     text-decoration: none;
     color: black;
-    font-size: 5rem;
+    font-size: 4.6rem;
 }
 
 .main-logo-product{
@@ -416,9 +416,6 @@
 }
 
 /* Buy Section */
-.buy-section .header-buy{
-}
-
 .buy-section .sidebar-left{
     padding-top: 20px;
     padding-right: 100px;
@@ -682,18 +679,9 @@
     transform: translateX(-50%);
 }
 
-.product-section-page .header-product{
-    visibility: hidden;
-}
-
-
 /* Detail Product Page */
 .product-detail-container{
     padding-top: 40px;
-}
-
-.product-detail-container .list-image-detail{
-
 }
 
 .product-detail-container .list-image-detail li{
@@ -846,4 +834,62 @@
 
 .product-detail-container .product-detail-item{
     margin: 0;
+}
+
+.product-detail-container .page-dots{
+
+}
+
+.product-detail-container .page-dots{
+
+}
+
+.product-detail-container .page-dots li{
+
+}
+
+
+
+
+/* Product Page */
+.product-section-page .header-product{
+    visibility: hidden;
+}
+
+.product-section-page .pagination-product{
+    display: flex;
+    justify-content: center;
+}
+
+.product-section-page .pagination-product__active{
+    margin-top: 40px;
+}
+
+.product-section-page .pagination-product .prev{
+    margin-right: 20px;
+}
+
+.product-section-page .pagination-product a{
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #DD478D;
+}
+
+.product-section-page .pagination-product .page-node{
+    opacity: 0.4;
+}
+
+.product-section-page .pagination-product .next{
+    margin-left: 20px;
+}
+
+.product-section-page .pagination-product .page-node__active{
+    opacity: 1;
+}
+
+.product-section-page .pagination-product a:hover{
+    color: var(--primary-color);
 }
