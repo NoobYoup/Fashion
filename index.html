@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="icon" href="./assets/img/sale_icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/grid.css" />
@@ -57,29 +58,29 @@
           <span class="tooltip-cart">Giỏ hàng</span>
         </label>
         <div class="cmt-icon">
-          <a href="#">
+          <a href="https://www.messenger.com" target="_blank">
             <i class="ti-comments"></i>
           </a>
           <span class="tooltip-cmt">Tin nhắn</span>
         </div>
-        <div class="bag-icon">
-          <a href="#">
-            <i class="ti-bag"></i>
-          </a>
+        <label for="modal-input-history" class="bag-icon">
+          <!-- <a href="#"> -->
+          <i class="ti-bag"></i>
+          <!-- </a> -->
           <span class="tooltip-bag">Lịch sử mua hàng</span>
-        </div>
-        <div class="ticket-icon">
-          <a href="#">
+        </label>
+        <label for="modal-input-voucher" class="ticket-icon">
+          <!-- <a href="#"> -->
             <i class="ti-ticket"></i>
-          </a>
+          <!-- </a> -->
           <span class="tooltip-ticket">Voucher</span>
-        </div>
-        <div class="bell-icon">
-          <a href="#">
+        </label>
+        <label for="modal-input-notification" class="bell-icon">
+          <!-- <a href="#"> -->
             <i class="ti-bell"></i>
-          </a>
+          <!-- </a> -->
           <span class="tooltip-bell">Thông báo</span>
-        </div>
+        </label>
       </div>
     </div>
     <!-- End: Header -->
@@ -87,10 +88,16 @@
     <input type="checkbox" hidden class="input-login" id="modal-input-login" />
     <input type="checkbox" hidden class="input-menu" id="modal-input-menu" />
     <input type="checkbox" hidden class="input-cart" id="modal-input-cart" />
+    <input type="checkbox" hidden class="input-notification" id="modal-input-notification" />
+    <input type="checkbox" hidden class="input-history" id="modal-input-history" />
+    <input type="checkbox" hidden class="input-voucher" id="modal-input-voucher" />
 
     <label for="modal-input-login" class="overlay-login"></label>
     <label for="modal-input-menu" class="overlay-menu"></label>
     <label for="modal-input-cart" class="overlay-cart"></label>
+    <label for="modal-input-notification" class="overlay-notification"></label>
+    <label for="modal-input-history" class="overlay-history"></label>
+    <label for="modal-input-voucher" class="overlay-voucher"></label>
 
     <!-- Modal Login -->
     <div class="modal-login">
@@ -105,20 +112,8 @@
 
       <div class="modal-body">
         <form action="">
-          <!-- <label for="" class="modal-label">
-              <i class="ti-shopping-cart"></i>
-              Tickets, $15 per person
-            </label> -->
-
           <input type="email" class="modal-input" placeholder="Email.." required />
-
-          <!-- <label for="" class="modal-label">
-              <i class="ti-user"></i>
-              Send To
-            </label> -->
-
           <input type="password" class="modal-input" placeholder="Mật khẩu.." required />
-
           <button class="buy-tickets">
             ĐĂNG NHẬP
             <i class="ti-check"></i>
@@ -128,10 +123,10 @@
       </div>
       <div class="modal-footer">
         <p class="modal-help">
-          Khách hàng mới? <a href="" class="create-acc">Tạo tài khoản</a>
+          Khách hàng mới? <a href="#" class="create-acc">Tạo tài khoản</a>
         </p>
         <p class="modal-help">
-          Quên mật khẩu? <a href="" class="restore-pwd">Khôi phục mật khẩu</a>
+          Quên mật khẩu? <a href="#" class="restore-pwd">Khôi phục mật khẩu</a>
         </p>
       </div>
     </div>
@@ -149,7 +144,7 @@
 
       <div class="modal-body">
         <div class="modal-content">
-          <table class="cart-view">
+          <!-- <table class="cart-view">
             <tbody>
               <tr>
                 <td>
@@ -160,7 +155,79 @@
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/11.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU GARBIEL</p>
+                <select class="size-product">
+                  <option value="">Size S</option>
+                  <option value="ha-noi">Size M</option>
+                  <option value="tphcm">Size L</option>
+                </select>
+                <p class="cart-product-price">290,000₫</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <div class="quantity-product">
+                <input type="button" value="-" class="quantity-btn-minus">
+                <input type="text" value="1" class="quantity-select">
+                <input type="button" value="+" class="quantity-btn-plus">
+              </div>
+              <p class="cart-product-price">290,000₫</p>
+            </div>
+          </div>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/12.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU FAIRYTALE</p>
+                <select class="size-product">
+                  <option value="">Size S</option>
+                  <option value="ha-noi">Size M</option>
+                  <option value="tphcm">Size L</option>
+                </select>
+                <p class="cart-product-price">180,000₫</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <div class="quantity-product">
+                <input type="button" value="-" class="quantity-btn-minus">
+                <input type="text" value="1" class="quantity-select">
+                <input type="button" value="+" class="quantity-btn-plus">
+              </div>
+              <p class="cart-product-price">180,000₫</p>
+            </div>
+          </div>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/13.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU AUBREY</p>
+                <select class="size-product">
+                  <option value="">Size S</option>
+                  <option value="ha-noi">Size M</option>
+                  <option value="tphcm">Size L</option>
+                </select>
+                <p class="cart-product-price">200,000₫</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <div class="quantity-product">
+                <input type="button" value="-" class="quantity-btn-minus">
+                <input type="text" value="1" class="quantity-select">
+                <input type="button" value="+" class="quantity-btn-plus">
+              </div>
+              <p class="cart-product-price">200,000₫</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -173,7 +240,7 @@
               TỔNG TIỀN:
             </td>
             <td class="text-right">
-              0<sup>₫</sup>
+              670.000<sup>₫</sup>
             </td>
           </tr>
         </table>
@@ -193,43 +260,43 @@
       </label>
       <ul class="nav_mobile-list">
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             ÁO
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             ÁO KHOÁC
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             QUẦN
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             ĐẦM
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             VÁY
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             VOUCHER
           </a>
 
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             LỊCH SỬ MUA HÀNG
           </a>
         </li>
@@ -246,67 +313,410 @@
       </ul>
     </div>
 
+    <!-- Modal Notification -->
+    <div class="modal-notification">
+      <label for="modal-input-notification" class="modal-close-notification">
+        <i class="ti-close"></i>
+      </label>
+
+      <div class="modal-header">
+        <i class="modal-header-icon ti-bell"></i>
+        Thông báo
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-content">
+          <h2>Gần đây</h2>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-check"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Đơn hàng của bạn đã giao thành công.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>20/5</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Sản phẩm trong giỏ hàng của bạn đang có giá sốc.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>16/5</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-ticket"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>10 vouchers ngập tràn cho nàng đón hè. Săn ngay!</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>10/5</span>
+            </div>
+          </div>
+
+          <div class="line"></div>
+          <h2>Tháng 4</h2>
+
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-gift"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Tháng của lời nói dối, 100 deals không thể từ chối.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>18/4</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-truck"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Đơn hàng của bạn đang trong quá trình giao.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>10/4</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-mobile"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Hãy chú ý thiết bị di động của bạn, shipper đang trên đường giao hàng tới.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>08/4</span>
+            </div>
+          </div>
+
+          <div class="line"></div>
+          <h2>Cũ hơn</h2>
+
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-check"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Đơn hàng của bạn đã giao thành công.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>20/3</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Sản phẩm trong giỏ hàng của bạn đang có giá sốc.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>16/3</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-ticket"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>10 vouchers ngập tràn cho nàng đón hè. Săn ngay!</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>10/2</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-gift"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Tháng của lời nói dối, 100 deals không thể từ chối.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>18/1</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-truck"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Đơn hàng của bạn đang trong quá trình giao.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>10/1</span>
+            </div>
+          </div>
+          <div class="row notification-list">
+            <div class="col l-1 m-1 c-1 notification-icon">
+              <div>
+                <i class="ti-mobile"></i>
+              </div>
+            </div>
+            <div class="col l-10 m-10 c-10 notification-title">
+              <div>
+                <p>Hãy chú ý thiết bị di động của bạn, shipper đang trên đường giao hàng tới.</p>
+              </div>
+            </div>
+            <div class="col l-1 m-1 c-1 notification-date">
+              <span>08/1</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <table class="total">
+          <tr>
+            <td class="text-left">
+              TỔNG TIỀN:
+            </td>
+            <td class="text-right">
+              0<sup>₫</sup>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <button class="buy-cart">
+            THANH TOÁN
+            <i class="ti-check"></i>
+          </button>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Modal History -->
+    <div class="modal-history">
+      <label for="modal-input-history" class="modal-close-history">
+        <i class="ti-close"></i>
+      </label>
+
+      <div class="modal-header">
+        <i class="modal-header-icon ti-bag"></i>
+        Lịch sử mua hàng
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-content">
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/11.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU GARBIEL</p>
+                <p>Size S</p>
+                <p>x1</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <p class="cart-product-status">HOÀN THÀNH</p>
+              <p class="cart-product-price">290,000₫</p>
+              <button class="cart-product-buy">
+                <a href="./detail.html">MUA LẠI</a>
+              </button>
+            </div>
+          </div>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/12.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU FAIRYTALE</p>
+                <p>Size S</p>
+                <p>x1</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <p class="cart-product-status">HOÀN THÀNH</p>
+              <p class="cart-product-price">180,000₫</p>
+              <button class="cart-product-buy">
+                <a href="./detail.html">MUA LẠI</a>
+              </button>
+            </div>
+          </div>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/13.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU AUBREY</p>
+                <p>Size S</p>
+                <p>x1</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <p class="cart-product-status">HOÀN THÀNH</p>
+              <p class="cart-product-price">200,000₫</p>
+              <button class="cart-product-buy">
+                <a href="./detail.html">MUA LẠI</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+    </div>
+
+    <!-- Modal Voucher -->
+    <div class="modal-voucher">
+      <label for="modal-input-voucher" class="modal-close-voucher">
+        <i class="ti-close"></i>
+      </label>
+
+      <div class="modal-header">
+        <i class="modal-header-icon ti-ticket"></i>
+        Voucher
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-content">
+          <h2>Đón tháng hè, cùng Nie's diện đẹp nhe!</h2>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/voucher.png" alt="voucher">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>Giảm 10% Giảm tối đa ₫30k <br>Đơn Tối Thiểu ₫150k</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <button class="cart-product-buy">
+                <a href="./detail.html">LƯU</a>
+              </button>
+            </div>
+          </div>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/voucher.png" alt="voucher">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>Giảm 10% Giảm tối đa ₫30k <br>Đơn Tối Thiểu ₫150k</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <button class="cart-product-buy">
+                <a href="./detail.html">LƯU</a>
+              </button>
+            </div>
+          </div>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/voucher.png" alt="voucher">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>Giảm 10% Giảm tối đa ₫30k <br>Đơn Tối Thiểu ₫150k</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <button class="cart-product-buy">
+                <a href="./detail.html">LƯU</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="line"></div>
+          <h2>My vouchers</h2>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/voucher.png" alt="voucher">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>Giảm 10% Giảm tối đa ₫30k <br>Đơn Tối Thiểu ₫150k</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <button class="cart-product-buy">
+                <a href="./detail.html">Dùng ngay</a>
+              </button>
+            </div>
+          </div><div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/voucher.png" alt="voucher">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>Giảm 10% Giảm tối đa ₫30k <br>Đơn Tối Thiểu ₫150k</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <button class="cart-product-buy">
+                <a href="./detail.html">Dùng ngay</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Begin: Content -->
     <div class="content">
-      <!-- Begin: Sidebar-Left -->
-      <!-- <div class="socials-list">
-            <ul>
-              <li class="fb-link">
-                <a href="https://facebook.com/noobyoup" target="_blank">
-                  <img
-                    src="./assets/img/facebook_icon.png"
-                    alt="FaceBook"
-                    class="socials_icon"
-                  />
-                </a>
-                <div class="tooltip-fb">Facebook</div>
-              </li>
-
-              <li class="ig-link">
-                <a href="https://instagram.com/noobyoupp" target="_blank">
-                  <img
-                    src="./assets/img/ig_icon.jpg"
-                    alt="Instagram"
-                    class="socials_icon"
-                  />
-                </a>
-                <span class="tooltip-ig">Instagram</span>
-              </li>
-
-              <li class="pin-link">
-                <a href="https://facebook.com/noobyoup" target="_blank">
-                  <img
-                    src="./assets/img/pinterest_icon.png"
-                    alt="Pinterest"
-                    class="socials_icon"
-                  />
-                </a>
-                <span class="tooltip-pin">Pinterest</span>
-              </li>
-            </ul>
-          </div> -->
-      <!-- End: Sidebar-Left -->
-
-      <!-- Begin: Sidebar-Right -->
-      <!-- <div class="sales-icon">
-            <a href="#">
-              <img
-                src="./assets/img/sale_icon.png"
-                alt="sales"
-              />
-            </a>
-          </div> -->
-      <!-- End: Sidebar-Right -->
-
-
       <div class="menu-search-mobile">
         <input type="text" class="input-search-mobile" placeholder="Tìm kiếm sản phẩm..." />
         <div class="search-icon-mobile">
           <i class="search-icon-mobile ti-search"></i>
         </div>
       </div>
-
 
       <div class="grid wide">
         <!-- Begin: Style-Section -->
@@ -709,48 +1119,73 @@
         <div class="row">
           <!-- Begin: More -->
           <div id="more" class="more col l-6 m-12 c-12">
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH BÁN HÀNG
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH THANH TOÁN
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH ĐẶT HÀNG VÀ GIAO HÀNG
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH HOÀN TRẢ
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH HOÀN TRẢ
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  HỢP TÁC ĐẠI LÝ
-                </a>
-              </li>
-
-            </ul>
-            <!-- <div class="btn-more">
-                <a href="#">XEM THÊM</a>
-              </div> -->
+            <div class="panel-policy">
+              <div class="panel-policy-sales">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH BÁN HÀNG
+              </div>
+              <div class="panel-policy-sales-title">
+                <p>- Niêm yết giá sản phẩm một cách rõ ràng trên website, bao gồm thuế và phí vận chuyển. <br>
+                  - Cập nhật giá sản phẩm thường xuyên và theo đúng quy định của pháp luật. <br>
+                  - Rõ ràng về các chương trình khuyến mãi, giảm giá và ưu đãi dành cho khách hàng.</p>
+              </div>
+            </div>                                
+    
+            <div class="panel-policy">
+              <div class="panel-policy-payment">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH THANH TOÁN
+              </div>
+              <div class="panel-policy-payment-title">
+                <p>Nie's cung cấp 4 hình thức thanh toán cho quý khách: Thanh toán khi nhận hàng (COD), Chuyển khoản, Thanh toán qua thẻ tín dụng, Thanh toán qua thẻ ATM.</p>
+              </div>
+            </div>                        
+     
+            <div class="panel-policy">
+              <div class="panel-policy-order">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH ĐẶT HÀNG VÀ GIAO HÀNG
+              </div>
+              <div class="panel-policy-order-title">
+                <p>Đơn hàng sẽ được giao cho Quý khách trong vòng 05 - 07 ngày làm việc kể từ ngày đặt đơn. Quý khách có thể liên hệ với Mieu qua Email, Điện thoại, Facebook để được biết về lộ trình đơn hàng của mình</p>
+              </div>
+            </div>                        
+    
+            <div class="panel-policy">
+              <div class="panel-policy-return">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH ĐỔI TRẢ
+              </div>
+              <div class="panel-policy-return-title">
+                <p>- Trường hợp (TH) đổi size: khách vui lòng thanh toán giúp Miều phí 2 chiều ( 22k hoặc 44k tùy khu vực ). - TH sản phẩm bị lỗi, ship sai/ship thiếu: Miều chịu hoàn toàn phí. - TH đổi sang sản phẩm khác bạn hãy chọn sản phẩm có giá cao hơn hoặc tổng bill cao hơn và thanh toán phần chênh lệch cùng phí ship. - Miều không nhận đổi/trả các sản phẩm Freesize và hàng Sale (TH Khách mua sản phẩm sale muốn đổi Miều sẽ quy sản phẩm về giá gốc) Lưu ý: - Sản phẩm chưa qua sử dụng và giặt ủi. - Sản phẩm phải còn nguyên tem và hóa đơn. - Miều chỉ giải quyết khiếu nại khi có video khui hàng. - Miều hỗ trợ đổi trả sản phẩm trong vòng 3 ngày kể từ ngày nhận được hàng. Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.</p>
+              </div>
+            </div>                        
+    
+            <div class="panel-policy">
+              <div class="panel-policy-privacy">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH BẢO MẬT
+              </div>
+              <div class="panel-policy-privacy-title">
+                <p>- Cam kết bảo mật thông tin cá nhân của khách hàng, bao gồm thông tin thanh toán, thông tin liên hệ và thông tin giao hàng. <br>
+                  - Không bao giờ chia sẻ thông tin cá nhân của khách hàng với bên thứ ba mà không có sự đồng ý của khách hàng. <br>
+                  - Sử dụng các biện pháp an ninh mạng tiên tiến để bảo vệ thông tin cá nhân của khách hàng.</p>
+              </div>
+            </div>                        
+    
+            <div class="panel-policy">
+              <div class="panel-policy-collab">
+                <i class="arrow ti-angle-double-right"></i>
+                HỢP TÁC ĐẠI LÝ
+              </div>
+              <div class="panel-policy-collab-title">
+                <p>- Nêu rõ điều kiện để trở thành đại lý của bạn, ví dụ như có cửa hàng kinh doanh thời trang, có uy tín trên thị trường và có khả năng bán hàng tốt. <br>
+                  - Nêu rõ các quyền lợi của đại lý, ví dụ như được hưởng mức chiết khấu cao, được hỗ trợ về marketing và quảng cáo, được tham gia các chương trình đào tạo. <br>
+                  - Nêu rõ trách nhiệm của đại lý, ví dụ như tuân thủ các chính sách bán hàng của bạn, đảm bảo chất lượng sản phẩm và dịch vụ, thực hiện tốt công tác bán hàng và chăm sóc khách hàng. <br>
+                  - Cung cấp thông tin liên hệ để các cá nhân hoặc tổ chức có nhu cầu hợp tác với bạn.
+                </p>
+              </div>
+            </div>                        
           </div>
           <!-- End: More -->
 
@@ -834,11 +1269,21 @@
       </div>
       <div class="line-full"></div>
 
-      <p class="copyright">Copyright © 2024 <a href="https://www.facebook.com/noobyoup">TranMinhTrung_DH52111969_D21-TH08.</a></p>
+      <p class="copyright">Copyright © 2024 <a
+          href="https://www.facebook.com/noobyoup">TranMinhTrung_DH52111969_D21-TH08.</a></p>
     </div>
-    <!-- End: Footer -->
+
+
+
   </div>
-  <script src="./assets/js/main.js"></script>
+  <button id="scroll-to-top" class="scroll-to-top" onclick="myFunction()"><i class="ti-angle-up"></i></button>
+  
+  <script src="./assets/js/3cham.js"></script>
+  <script src="./assets/js/back_to_top.js"></script>
+  <script src="./assets/js/drop_down.js"></script>
+  <script src="./assets/js/quantity.js"></script>
+  <script src="./assets/js/select_size.js"></script>
+  <script src="./assets/js/unscroll_modal.js"></script>
 </body>
 
 </html>

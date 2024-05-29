@@ -128,10 +128,10 @@
       </div>
       <div class="modal-footer">
         <p class="modal-help">
-          Khách hàng mới? <a href="" class="create-acc">Tạo tài khoản</a>
+          Khách hàng mới? <a href="#" class="create-acc">Tạo tài khoản</a>
         </p>
         <p class="modal-help">
-          Quên mật khẩu? <a href="" class="restore-pwd">Khôi phục mật khẩu</a>
+          Quên mật khẩu? <a href="#" class="restore-pwd">Khôi phục mật khẩu</a>
         </p>
       </div>
     </div>
@@ -149,7 +149,7 @@
 
       <div class="modal-body">
         <div class="modal-content">
-          <table class="cart-view">
+          <!-- <table class="cart-view">
             <tbody>
               <tr>
                 <td>
@@ -160,7 +160,79 @@
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/11.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU GARBIEL</p>
+                <select class="size-product">
+                  <option value="">Size S</option>
+                  <option value="ha-noi">Size M</option>
+                  <option value="tphcm">Size L</option>
+                </select>
+                <p class="cart-product-price">290,000₫</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <div class="quantity-product">
+                <input type="button" value="-" class="quantity-btn-minus">
+                <input type="text" value="1" class="quantity-select">
+                <input type="button" value="+" class="quantity-btn-plus">
+              </div>
+              <p class="cart-product-price">290,000₫</p>
+            </div>
+          </div>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/12.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU FAIRYTALE</p>
+                <select class="size-product">
+                  <option value="">Size S</option>
+                  <option value="ha-noi">Size M</option>
+                  <option value="tphcm">Size L</option>
+                </select>
+                <p class="cart-product-price">180,000₫</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <div class="quantity-product">
+                <input type="button" value="-" class="quantity-btn-minus">
+                <input type="text" value="1" class="quantity-select">
+                <input type="button" value="+" class="quantity-btn-plus">
+              </div>
+              <p class="cart-product-price">180,000₫</p>
+            </div>
+          </div>
+          <div class="row cart-product-list">
+            <div class="col l-3 m-2 c-2 cart-product-img">
+              <img src="./assets/img/13.png" alt="">
+            </div>
+            <div class="col l-6 m-8 c-8 cart-product-title">
+              <div>
+                <p>ÁO KIỂU AUBREY</p>
+                <select class="size-product">
+                  <option value="">Size S</option>
+                  <option value="ha-noi">Size M</option>
+                  <option value="tphcm">Size L</option>
+                </select>
+                <p class="cart-product-price">200,000₫</p>
+              </div>
+            </div>
+            <div class="col l-3 m-2 c-2 cart-product-quantity">
+              <div class="quantity-product">
+                <input type="button" value="-" class="quantity-btn-minus">
+                <input type="text" value="1" class="quantity-select">
+                <input type="button" value="+" class="quantity-btn-plus">
+              </div>
+              <p class="cart-product-price">200,000₫</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -193,43 +265,43 @@
       </label>
       <ul class="nav_mobile-list">
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             ÁO
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             ÁO KHOÁC
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             QUẦN
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             ĐẦM
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             VÁY
             <i class="ti-angle-right arrow-right"></i>
           </a>
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             VOUCHER
           </a>
 
         </li>
         <li>
-          <a href="" class="nav_mobile-link">
+          <a href="#" class="nav_mobile-link">
             LỊCH SỬ MUA HÀNG
           </a>
         </li>
@@ -248,6 +320,12 @@
 
     <!-- Begin: Product-Section -->
     <div class="product-section product-section-page">
+      <div class="menu-search-mobile">
+        <input type="text" class="input-search-mobile" placeholder="Tìm kiếm sản phẩm..." />
+        <div class="search-icon-mobile">
+          <i class="search-icon-mobile ti-search"></i>
+        </div>
+      </div>
       <div class="grid wide">
         <div class="row product-section-list">
           <div class="soft col l-12 m-12 c-12">
@@ -269,13 +347,15 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/15.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/15.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
                   <div>
 
-                    <a href="../pages/buy.html" class="action-buy">
+                    <a href="./buy.html" class="action-buy">
                       Mua
                       <i class="ti-bag"></i>
                     </a>
@@ -297,11 +377,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/16.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/16.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -321,11 +403,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/11.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/11.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -345,11 +429,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/18.jpg" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/18.jpg" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -369,11 +455,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/19.jpg" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/19.jpg" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -393,11 +481,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/11.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/11.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -417,11 +507,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/12.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/12.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -441,11 +533,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/13.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/13.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -465,11 +559,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/14.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/14.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -491,11 +587,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/15.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/15.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -515,13 +613,15 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/15.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/15.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
                   <div>
 
-                    <a href="../pages/buy.html" class="action-buy">
+                    <a href="./buy.html" class="action-buy">
                       Mua
                       <i class="ti-bag"></i>
                     </a>
@@ -543,11 +643,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/16.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/16.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -567,11 +669,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/11.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/11.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -591,11 +695,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/18.jpg" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/18.jpg" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -615,11 +721,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/19.jpg" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/19.jpg" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -639,11 +747,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/11.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/11.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -663,11 +773,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/12.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/12.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -687,11 +799,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/13.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/13.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -711,11 +825,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/14.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/14.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -737,11 +853,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/15.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/15.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -761,13 +879,15 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/15.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/15.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
                   <div>
 
-                    <a href="../pages/buy.html" class="action-buy">
+                    <a href="./buy.html" class="action-buy">
                       Mua
                       <i class="ti-bag"></i>
                     </a>
@@ -789,11 +909,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/16.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/16.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -813,11 +935,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/11.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/11.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -837,11 +961,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/18.jpg" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/18.jpg" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -861,11 +987,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/19.jpg" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/19.jpg" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -885,13 +1013,15 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/15.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/15.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
                   <div>
 
-                    <a href="../pages/buy.html" class="action-buy">
+                    <a href="./buy.html" class="action-buy">
                       Mua
                       <i class="ti-bag"></i>
                     </a>
@@ -913,11 +1043,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/16.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/16.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -937,11 +1069,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/11.png" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/11.png" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -961,11 +1095,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/18.jpg" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/18.jpg" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -985,11 +1121,13 @@
           <div class="product col l-2-4 m-4 c-6">
             <div class="image-product">
               <div class="image-product-item">
-                <img src="./assets/img/19.jpg" alt="product" />
+                <a href="./detail.html">
+                  <img src="./assets/img/19.jpg" alt="product" />
+                </a>
               </div>
               <div class="row button-add">
                 <div class="button-buy col l-6 m-6 c-6">
-                  <a href="../pages/buy.html" class="action-buy">
+                  <a href="./buy.html" class="action-buy">
                     Mua
                     <i class="ti-bag"></i>
                   </a>
@@ -1010,16 +1148,16 @@
 
         <div class="col l-12 m-12 c-12">
           <div class="pagination-product pagination-product__active">
-            <a href="" class="prev">
+            <a href="#" class="prev">
               <i class="ti-arrow-left"></i>
             </a>
-            <a href="" class="page-node page-node__active">1</a>
-            <a href="" class="page-node">2</a>
-            <a href="" class="page-node">3</a>
-            <a href="" class="page-node">4</a>
-            <a href="" class="page-node">...</a>
-            <a href="" class="page-node">10</a>
-            <a href="" class="next">
+            <a href="#" class="page-node page-node__active">1</a>
+            <a href="#" class="page-node">2</a>
+            <a href="#" class="page-node">3</a>
+            <a href="#" class="page-node">4</a>
+            <a href="#" class="page-node">...</a>
+            <a href="#" class="page-node">10</a>
+            <a href="#" class="next">
               <i class="ti-arrow-right"></i>
             </a>
           </div>
@@ -1033,48 +1171,65 @@
         <div class="row">
           <!-- Begin: More -->
           <div id="more" class="more col l-6 m-12 c-12">
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH BÁN HÀNG
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH THANH TOÁN
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH ĐẶT HÀNG VÀ GIAO HÀNG
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH HOÀN TRẢ
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  CHÍNH SÁCH HOÀN TRẢ
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="arrow ti-angle-double-right"></i>
-                  HỢP TÁC ĐẠI LÝ
-                </a>
-              </li>
-
-            </ul>
-            <!-- <div class="btn-more">
-                <a href="#">XEM THÊM</a>
-              </div> -->
+            <div class="panel-policy">
+              <div class="panel-policy-sales">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH BÁN HÀNG
+              </div>
+              <div class="panel-policy-sales-title">
+                <p>Nie's cung cấp 4 hình thức thanh toán cho quý khách: Thanh toán khi nhận hàng (COD), Chuyển khoản, Thanh toán qua thẻ tín dụng, Thanh toán qua thẻ ATM.</p>
+              </div>
+            </div>                                
+    
+            <div class="panel-policy">
+              <div class="panel-policy-payment">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH THANH TOÁN
+              </div>
+              <div class="panel-policy-payment-title">
+                <p>Nie's cung cấp 4 hình thức thanh toán cho quý khách: Thanh toán khi nhận hàng (COD), Chuyển khoản, Thanh toán qua thẻ tín dụng, Thanh toán qua thẻ ATM.</p>
+              </div>
+            </div>                        
+     
+            <div class="panel-policy">
+              <div class="panel-policy-order">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH ĐẶT HÀNG VÀ GIAO HÀNG
+              </div>
+              <div class="panel-policy-order-title">
+                <p>Nie's cung cấp 4 hình thức thanh toán cho quý khách: Thanh toán khi nhận hàng (COD), Chuyển khoản, Thanh toán qua thẻ tín dụng, Thanh toán qua thẻ ATM.</p>
+              </div>
+            </div>                        
+    
+            <div class="panel-policy">
+              <div class="panel-policy-return">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH HOÀN TRẢ
+              </div>
+              <div class="panel-policy-return-title">
+                <p>Nie's cung cấp 4 hình thức thanh toán cho quý khách: Thanh toán khi nhận hàng (COD), Chuyển khoản, Thanh toán qua thẻ tín dụng, Thanh toán qua thẻ ATM.</p>
+              </div>
+            </div>                        
+    
+            <div class="panel-policy">
+              <div class="panel-policy-privacy">
+                <i class="arrow ti-angle-double-right"></i>
+                CHÍNH SÁCH BẢO MẬT
+              </div>
+              <div class="panel-policy-privacy-title">
+                <p>Nie's cung cấp 4 hình thức thanh toán cho quý khách: Thanh toán khi nhận hàng (COD), Chuyển khoản, Thanh toán qua thẻ tín dụng, Thanh toán qua thẻ ATM.</p>
+              </div>
+            </div>                        
+    
+            <div class="panel-policy">
+              <div class="panel-policy-collab">
+                <i class="arrow ti-angle-double-right"></i>
+                HỢP TÁC ĐẠI LÝ
+              </div>
+              <div class="panel-policy-collab-title">
+                <p>Nie's cung cấp 4 hình thức thanh toán cho quý khách: Thanh toán khi nhận hàng (COD), Chuyển khoản, Thanh toán qua thẻ tín dụng, Thanh toán qua thẻ ATM.</p>
+              </div>
+            </div>                        
           </div>
           <!-- End: More -->
 
@@ -1158,12 +1313,25 @@
       </div>
       <div class="line-full"></div>
 
-      <p class="copyright">Copyright © 2024 <a href="https://www.facebook.com/noobyoup">TranMinhTrung_DH52111969_D21-TH08.</a></p>
+      <p class="copyright">Copyright © 2024 <a
+          href="https://www.facebook.com/noobyoup">TranMinhTrung_DH52111969_D21-TH08.</a></p>
     </div>
     <!-- End: Footer -->
   </div>
+
+  <button id="scroll-to-top" class="scroll-to-top" onclick="myFunction()"><i class="ti-angle-up"></i></button>
+  <div class="messenger-icon">
+    <a href="https://www.messenger.com" target="_blank">
+      <img src="./assets/img/messenger-icon.png" alt="messenger">
+    </a>
   </div>
-  <script src="./assets/js/main.js"></script>
+  
+  <script src="./assets/js/3cham.js"></script>
+  <script src="./assets/js/back_to_top.js"></script>
+  <script src="./assets/js/drop_down.js"></script>
+  <script src="./assets/js/quantity.js"></script>
+  <script src="./assets/js/select_size.js"></script>
+  <script src="./assets/js/unscroll_modal.js"></script>
 
 </body>
 

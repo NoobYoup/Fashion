@@ -19,7 +19,10 @@
         display: block;
     }
     .modal-login,
-    .modal-cart{
+    .modal-cart,
+    .modal-history,
+    .modal-voucher,
+    .modal-notification{
         width: 100%;  
         left: 0;  
     }
@@ -64,9 +67,6 @@
         bottom: 0;
         transform: translateX(-50%);
     }
-    .product-section-page .soft-by{
-        padding: 10px;
-    }
     .contact-title{
         text-align: center;
     }
@@ -74,8 +74,26 @@
         width: 100%;
         text-align: center;
     }
-    .product-detail-container .info-product .product-title{
-        /* margin-top: 70px; */
+    .product-detail-container .product-related{
+        padding: 0 4px;
+    }
+    .product-detail-container .info-product .quantity-product .quantity-btn-plus,
+    .product-detail-container .info-product .quantity-product .quantity-btn-minus,
+    .modal-cart .modal-body .cart-product-list .quantity-btn-minus,
+    .modal-cart .modal-body .cart-product-list .quantity-btn-plus{
+        padding: 6px 0;
+    }
+    .product-detail-container .info-product .quantity-product .quantity-select,
+    .modal-cart .modal-body .cart-product-list .cart-product-quantity .quantity-select{
+        padding: 6px 0;
+        width: 2.8rem;
+    }
+    .buy-section .content-sidebar-left .form-order .footer-buy{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    .product-detail-container .product-related .pagination-related{
+        display: none;
     }
 }
 
@@ -95,28 +113,20 @@
     .contact{
         padding-left: 5px;
     }
-    .product-section,
-    .product-related{
-        margin-left: 9px;
-        margin-right: 8px;
-    }
     .product-section .image-product .action-buy,
     .product-section .image-product .action-show{
         font-size: 1.2rem;
     }
     .product-section .image-product .action-buy,
-    .product-section .image-product .action-show{
-    padding: 9px 22px;
+    .product-section .image-product .action-show,
+    .product-related .image-product .button-add .action-buy,
+    .product-related .image-product .button-add .action-show{
+    padding: 9px 20px;
     }
-    /* .modal-login{
-        transform: translateY(-300%);
-    } */
-    /* .input-login:checked ~ .modal-login{
-        transform: translateY(-155%);
-    }
-    .input-cart:checked ~ .modal-cart{
-        transform: translateY(-166%);
-    } */
+    .modal-history .modal-body .cart-product-quantity .cart-product-price,
+    .modal-voucher .modal-body .cart-product-quantity .cart-product-price{
+        margin-top: 70%;
+    }  
 }
 
 /* Mobile */
@@ -135,9 +145,9 @@
     .more ul{
         padding: 0 4px;
     }
-    .col.contact{
-        padding-left: 6px;
-        padding-right: 6px;
+    .footer .container-contact .contact{
+        padding-left: 4px;
+        padding-right: 4px;
     }
     .contact h3,
     .contact ul,
@@ -152,8 +162,10 @@
         font-size: 1.1rem;
     }   
     .product-section .image-product .action-buy,
-    .product-section .image-product .action-show{
-        padding: 9px 20px;
+    .product-section .image-product .action-show,
+    .product-related .image-product .button-add .action-buy,
+    .product-related .image-product .button-add .action-show{
+        padding: 9px 12px;
     }
     .buy-section .content-sidebar-left .footer-cart{
         flex-direction: column-reverse;
@@ -183,6 +195,21 @@
         padding: 10px;
         margin: 0;
     }
+    .product-detail-container .product-image-detail,
+    .product-detail-container .info-product{
+        padding: 0;
+    }
+    .modal-cart .modal-body .cart-product-title .size-product{
+        font-size: 1rem;
+    }
+    .modal-cart .modal-body .cart-product-quantity .cart-product-price,
+    .modal-cart .cart-product-list {
+        font-size: 1rem;
+    }
+    .modal-cart .modal-footer .text-left,
+    .modal-cart .modal-footer .text-right{
+        font-size: 1.4rem;
+    }
 }
 
 /* PC */
@@ -209,6 +236,9 @@
     .more ul{
         padding-right: 4px;
     }
+    .product-detail-container .page-dots{
+        display: none;
+    }
 }
 
 /* > PC low resolution */
@@ -226,8 +256,20 @@
     .product-section{
         margin-right: 14px; 
     }
-    .product-section .image-product .action-buy,
-    .product-section .image-product .action-show{
+    .product-related .image-product .button-add .action-buy,
+    .product-related .image-product .button-add .action-show,
+    .product-section .image-product .button-add .action-buy,
+    .product-section .image-product .button-add .action-show{
     padding: 9px 14px;
+    }
+    .modal-history .modal-body .cart-product-quantity .cart-product-price,
+    .modal-voucher .modal-body .cart-product-quantity .cart-product-price{
+        margin-top: 30%;
+    }  
+    .product-detail-container .product-related .pagination-related .next-btn{
+        right: 0
+    }
+    .product-detail-container .product-related .pagination-related .prev-btn{
+        left: 0;
     }
 }

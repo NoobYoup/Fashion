@@ -2,29 +2,20 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 4rem;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .footer-container,
 .style-section .image-container{
     padding: 0 1rem;
+    
 }
 
 .more{
-    font-size: 1.8rem;
-    opacity: 0.5;
-}
-
-.more a{
-    text-decoration: none;
-    color: black;
-}
-
-.more .btn-more{
-    opacity: 1;
-    border-radius: 1rem;
-    width: fit-content;
-    margin-top: 0;
-    background-color: white;
+    font-size: 1.5rem;
+    max-height: 420px;
+    overflow: auto;
 }
 
 .more .btn-more a {
@@ -36,26 +27,39 @@
     color: white;
 }
 
-.more li{
-    padding: 0 0 4rem;
-    list-style: none;
+.more .panel-policy-sales,
+.more .panel-policy-payment,
+.more .panel-policy-order,
+.more .panel-policy-return,
+.more .panel-policy-privacy,
+.more .panel-policy-collab{
+    margin-bottom: 3rem;  
     scale: 1;
     transition: 0.2s;
     width: fit-content;
+    cursor: pointer;
 }
 
-.more li:hover{
-    scale: 1.05;
+.more .panel-policy-heading:hover{
+    scale: 1.04;
     transition: 0.2s;
 }
 
-.more li:last-child{
-    padding: 0;
+.more .panel-policy-sales-title,
+.more .panel-policy-payment-title,
+.more .panel-policy-order-title,
+.more .panel-policy-return-title,
+.more .panel-policy-privacy-title,
+.more .panel-policy-collab-title{
+    display: none;
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 0 10rem 30px 20px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
-
 .container-contact{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .container-contact h3,
