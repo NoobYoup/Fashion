@@ -88,12 +88,26 @@
         padding: 6px 0;
         width: 2.8rem;
     }
+
+    .product-detail-container .info-product .quantity-product .btn-plus,
+    .product-detail-container .info-product .quantity-product .btn-minus{
+        padding: 6px 12px;
+
+    }
     .buy-section .content-sidebar-left .form-order .footer-buy{
         margin-bottom: 2rem;
         margin-top: 1rem;
     }
     .product-detail-container .product-related .pagination-related{
         display: none;
+    }
+    .more .panel-policy-sales-title,
+    .more .panel-policy-payment-title,
+    .more .panel-policy-order-title,
+    .more .panel-policy-return-title,
+    .more .panel-policy-privacy-title,
+    .more .panel-policy-collab-title{
+        padding: 0 2rem 30px 20px;
     }
 }
 
@@ -271,5 +285,9 @@
     }
     .product-detail-container .product-related .pagination-related .prev-btn{
         left: 0;
+    }
+    .more, 
+    .container-contact{
+        font-size: 1.5rem;
     }
 }
