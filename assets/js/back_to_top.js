@@ -1,14 +1,19 @@
-window.onscroll = function () { scrollFunction() };
+var scrollToTopButton = document.getElementById("scroll-to-top");
+
+scrollToTopButton.style.display = "none";
+
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("scroll-to-top").style.display = "block";
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    scrollToTopButton.style.display = "block";
   } else {
-    document.getElementById("scroll-to-top").style.display = "none";
+    scrollToTopButton.style.display = "none";
   }
 }
 
-function myFunction() {
+scrollToTopButton.addEventListener("click", function() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
+});
+

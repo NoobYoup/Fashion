@@ -45,42 +45,6 @@
           <i class="search-icon ti-search"></i>
         </div>
       </div>
-
-      <!-- Menu Circle -->
-      <!-- <div class="menu-circle">
-              <label for="modal-input-login" class="user-icon">
-                <i class="ti-user"></i>
-                <span class="tooltip-user">Tài khoản</span>
-              </label>
-              <label for="modal-input-cart" class="cart-icon">
-                <i class="ti-shopping-cart"></i>
-                <span class="tooltip-cart">Giỏ hàng</span>
-              </label>
-              <div class="cmt-icon">
-                <a href="#">
-                  <i class="ti-comments"></i>
-                </a>
-                <span class="tooltip-cmt">Tin nhắn</span>
-              </div>
-              <div class="bag-icon">
-                <a href="#">
-                  <i class="ti-bag"></i>
-                </a>
-                <span class="tooltip-bag">Lịch sử mua hàng</span>
-              </div>
-              <div class="ticket-icon">
-                <a href="#">
-                  <i class="ti-ticket"></i>
-                </a>
-                <span class="tooltip-ticket">Voucher</span>
-              </div>
-              <div class="bell-icon">
-                <a href="#">
-                  <i class="ti-bell"></i>
-                </a>
-                <span class="tooltip-bell">Thông báo</span>
-              </div>
-            </div> -->
     </div>
 
     <input type="checkbox" hidden class="input-login" id="modal-input-login" />
@@ -104,18 +68,7 @@
 
       <div class="modal-body">
         <form action="">
-          <!-- <label for="" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                  </label> -->
-
           <input type="email" class="modal-input" placeholder="Email.." required />
-
-          <!-- <label for="" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send To
-                  </label> -->
-
           <input type="password" class="modal-input" placeholder="Mật khẩu.." required />
 
           <button class="buy-tickets">
@@ -123,7 +76,6 @@
             <i class="ti-check"></i>
           </button>
         </form>
-
       </div>
       <div class="modal-footer">
         <p class="modal-help">
@@ -337,28 +289,28 @@
                   <div class="list-image-detail">
                     <ul>
                       <li>
-                        <div class="image-detail-item">
-                          <img src="./assets/img/11.png" alt="">
+                        <div class="image-detail-item" onclick="updateMainImage('./assets/img/16.png')">
+                          <img src="./assets/img/16.png" alt="">
                         </div>
                       </li>
                       <li>
-                        <div class="image-detail-item">
-                          <img src="./assets/img/11.png" alt="">
+                        <div class="image-detail-item" onclick="updateMainImage('./assets/img/12.png')">
+                          <img src="./assets/img/12.png" alt="">
                         </div>
                       </li>
                       <li>
-                        <div class="image-detail-item">
-                          <img src="./assets/img/11.png" alt="">
+                        <div class="image-detail-item" onclick="updateMainImage('./assets/img/13.png')">
+                          <img src="./assets/img/13.png" alt="">
                         </div>
                       </li>
                       <li>
-                        <div class="image-detail-item">
-                          <img src="./assets/img/11.png" alt="">
+                        <div class="image-detail-item" onclick="updateMainImage('./assets/img/14.png')">
+                          <img src="./assets/img/14.png" alt="">
                         </div>
                       </li>
                       <li>
-                        <div class="image-detail-item">
-                          <img src="./assets/img/11.png" alt="">
+                        <div class="image-detail-item" onclick="updateMainImage('./assets/img/15.png')">
+                          <img src="./assets/img/15.png" alt="">
                         </div>
                       </li>
                     </ul>
@@ -367,7 +319,7 @@
 
                 <div class="col l-10 m-12 c-12">
                   <div class="product-image-detail">
-                    <img src="./assets/img/16.png" alt="">
+                    <img id="main-image" src="./assets/img/16.png" alt="">
                   </div>
                 </div>
               </div>
@@ -674,7 +626,7 @@
             </div>
             <p>ÁO KIỂU DOUBLE BOW</p>
             <span>200,000₫</span>
-          </div>       
+          </div>
         </div>
 
         <div class="pagination-related">
@@ -864,7 +816,7 @@
     </div>
   </div>
 
-  <button id="scroll-to-top" class="scroll-to-top" onclick="myFunction()"><i class="ti-angle-up"></i></button>
+  <button id="scroll-to-top" class="scroll-to-top"><i class="ti-angle-up"></i></button>
   <div class="messenger-icon">
     <a href="https://www.messenger.com" target="_blank">
       <img src="./assets/img/messenger-icon.png" alt="messenger">
@@ -880,6 +832,8 @@
   <script src="./assets/js/select_size.js"></script>
   <script src="./assets/js/unscroll_modal.js"></script>
   <script src="./assets/js/next&prev.js"></script>
+  <script src="./assets/js/update_image.js"></script>
+
 
 </body>
 

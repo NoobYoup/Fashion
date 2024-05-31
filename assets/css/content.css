@@ -936,7 +936,7 @@
 }
   
 .product-detail-container .product-related .pagination-related button{
-    /* display: inline-block; */
+    display: none;
     background-color: #ddd;
     border: none;
     color: #333;
